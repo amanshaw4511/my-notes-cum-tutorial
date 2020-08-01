@@ -1,5 +1,0 @@
-{
-  "c_compiler": "gcc",
-  "VERBOSE_AT": "V=1",
-  "gmp": "6.1"
-}

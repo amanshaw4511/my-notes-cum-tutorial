@@ -1,7 +1,0 @@
-,0,0" anchor="LEFTCENTER" name="img_GiftTip" autoHeight="true" autoWidth="true" file="@thistheme:Logon\InfoTip.png"/>
-			<Static name="Static_GiftTip" text="请尽快登录账号，便于领取超级大礼包" anchor="LEFTCENTER" margin="8,0,0,0" autoHeight="true" autoWidth="true" color="0xffa2afc7"/>
-		</StackPanel>
-		<Frame name="QQLogonArea" sizeAsParent="true" anchor="TOPLEFT" margin="220,0,0,0">
-			<Frame name="QQAccountLogin_frame" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
-			<Frame name="QQQuickLogin_frame" size="250,188" anchor="TOPCENTER" margin="0,114,0,0" hidden="true"/>
-			<Button name="QQLoginType_btn" text="快速登录" anchor="BOTTOMCENTER" margin="0,0,0,29" autoHeight="true" auto

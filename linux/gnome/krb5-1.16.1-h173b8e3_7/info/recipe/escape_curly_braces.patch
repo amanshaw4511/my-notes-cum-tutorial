@@ -1,8 +1,0 @@
-trar extensionesInspeccionar ventana emergenteSolo el administrador ($1) puede modificar las apps y extensiones.Instalado por tus padresInstalado por tu tutorSeleccionar el directorio de extensión.Activar la extensiónSeleccionar el directorio de raíz de la extensión que debe empaquetarse. Para actualizar una extensión, también debes seleccionar el archivo de clave privada que será reutilizado.Seleccionar archivo de clave privada.Clave privadaSe requiere un directorio de raíz de la extensión.El directorio de raíz de la extensión no es válido.Archivo de clave privada no válidoLos siguientes archivos fueron creados:
-
-Extensión: $1
-Archivo de clave: $2
-
-Mantén el archivo de clave en un lugar seguro. Debes crear las nuevas versiones de tu extensión.Se creó la extensión:
-
-$1AgregarAgregar extensiónAgregar appAgregar temaInformar sobre abusosInformar abuso de "$1""$1" desea quitar esta extensión.Permitir nuevamenteAceptar permisosRevocar acceso al archivoRevocar el acceso al dispositivoRevocar acceso al archivo y al dispositivoReparar extensiónReparar aplicaciónTienda virtualMostrar detallesOcultar detallesAcceso denegadoError de extensiónSe agregó una extensión nueva ($1).Se agregó una aplicación nueva ($1).Se agregó un tema nuevo ($1)."$1" agregadaOtro programa en tu computadora agregó una app que puede cambiar el funcionamiento de Chrome.Otro pr
