@@ -1,0 +1,86 @@
+app config for flask-mail
+
+MAIL_SERVER                 localhost
+MAIL_PORT                   25
+MAIL_USE_TLS                false
+MAIL_USE_SSL                false
+MAIL_DEBUG                  flase
+MAIL_USERNAME               None
+MAIL_PASSWORD               None
+MAIL_DEFAULT_SENDER         None
+MAIL_MAX_EMAILS             None
+MAIL_SUPRESS_SEND           True
+MAIL_ASCII_ATTACHMENTS      False
+
+
+Message class :
+
+Flask-mail.Message(subject,recipients,body,html,sender,cc,bcc,to,date,charset,extra-header, mail-option, rcpt_options)
+
+Message.attach(filename, content_type, datat, disposition)
+Message.add_recipient()
+
+
+Mail Class :
+Flask-mail.Mail(app)
+Mail.send(Message object)
+Mail.connect()
+Mail.send_message()
+
+
+
+#####################################################3333
+ EMAIL varification using OTP
+#########################################################
+
+from Flask import *
+from Flask-mail import *
+from random import randint
+
+app = Flask(__name__)
+mail = Mail(app)
+
+app.config["MAIL_SERVER"] = 'smtp.gmail.com'
+app.config["MAIL_PORT"] = 465
+app.config["MAIL_USERNAME"] = 'username@gmail.com'
+app.config["MAIL_PASSWORD"] = '****************'
+app.config["MAIL_USE_TLS"]  = False
+app.config["MAIL_USE_SSL"]  = True
+
+OTP = None
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/login',methods=['GET','POST'])
+def login():
+    if request.method == 'GET' :
+        return render_template('login.html')
+    else :
+        email = request.form['email']
+        message = Message("OTP varification",sender='username@gmail.com', recipients = [email])
+        OTP = randint(000000,999999)
+        message.body = f"use this OTP to login : {OTP}"
+        mail.send(message)
+        return redirect(url_for('verify'))
+
+@app.route('/verify', methods=['GET','POST'])
+def verify():
+    if request.method == 'GET' :
+        return render_template('verify.html')
+    else :
+        if request.form['otp'] == str(OTP):
+            return "<h3> Email verified successfully </h3>"
+        else :
+            return "<h3> OTP is not valid <h3> "
+
+################################################################333333
+
+
+ADDING ATTACHMENT
+
+with app.open_resource("image.png") as fp:
+    msg.attach("image.png","image/png",fp.read())
+mail.send(msg)
+

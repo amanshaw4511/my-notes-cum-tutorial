@@ -1,0 +1,20 @@
+<command> --help     universal help command
+info <command>	     info about command
+man <command>	     manual about command
+
+
+//man is categorised in many sections
+man 5 passwd	    man of section 5 for passwd commad
+
+
+1	exexutable program and file format
+2	system call provided by the kernel
+3	library call probided by program lib
+4	device files (usually stored in /dev)
+5	file formats
+6	games
+7	miscellaneous (macro package, convensions etc)
+8	sys admin command (prog run by sudo)
+9	kernel routines
+
+

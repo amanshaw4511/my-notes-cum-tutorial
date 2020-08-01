@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "py37h7918eee_0",
+  "build_number": 0,
+  "depends": [
+    "hdf5 >=1.10.4,<1.10.5.0a0",
+    "libgcc-ng >=7.3.0",
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.7,<3.8.0a0",
+    "six"
+  ],
+  "license": "BSD-3-Clause",
+  "name": "h5py",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1545411834002,
+  "version": "2.9.0"
+}

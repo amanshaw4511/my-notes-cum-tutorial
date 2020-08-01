@@ -1,0 +1,21 @@
+
+class Outer{
+    private int i=20;
+
+    class Inner{
+        void msg(){
+            System.out.println("under Inner class | i = " + i);
+        }
+    }
+}
+
+public Test{
+    public static void main(String[] argv){
+        Outer outt = new Outer();
+        // to create instace of inner class first we have to instanciate Outer class
+
+        Outer.Inner inn = outt.new Inner();
+        
+        // outut : under Inner class | i = 20 
+    }
+}

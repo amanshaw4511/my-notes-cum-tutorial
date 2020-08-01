@@ -1,0 +1,44 @@
+can pass
+	  fi
+	  continue
+	fi
+
+
+	if test prog = "$linkmode" && test link != "$pass"; then
+	  func_append newlib_search_path " $ladir"
+	  deplibs="$lib $deplibs"
+
+	  linkalldeplibs=false
+	  if test no != "$link_all_deplibs" || test -z "$library_names" ||
+	     test no = "$build_libtool_libs"; then
+	    linkalldeplibs=:
+	  fi
+
+	  tmp_libs=
+	  for deplib in $dependency_libs; do
+	    case $deplib in
+	    -L*) func_stripname '-L' '' "$deplib"
+	         func_resolve_sysroot "$func_stripname_result"
+	         func_append newlib_search_path " $func_resolve_sysroot_result"
+		 ;;
+	    esac
+	    # Need to link against all dependency_libs?
+	    if $linkalldeplibs; then
+	      deplibs="$deplib $deplibs"
+	    else
+	      # Need to hardcode shared library paths
+	      # or/and link against static libraries
+	      newdependency_libs="$deplib $newdependency_libs"
+	    fi
+	    if $opt_preserve_dup_deps; then
+	      case "$tmp_libs " in
+	      *" $deplib "*) func_append specialdeplibs " $deplib" ;;
+	      esac
+	    fi
+	    func_append tmp_libs " $deplib"
+	  done # for deplib
+	  continue
+	fi # $linkmode = prog...
+
+	if test prog,link = "$linkmode,$pass"; then
+	  if te

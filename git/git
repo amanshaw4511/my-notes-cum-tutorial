@@ -1,0 +1,40 @@
+https://tutorialzine.com/2016/06/learn-git-in-30-minutes
+
+
+# intialize git directory / create local git-repo
+git init
+
+// new create files aa.py bb.txt cc.c
+
+# add files to "staging area"
+git add aa.py bb.txt cc.c
+# to add all files 
+git add .
+
+
+# commit changes to local-repo
+git commit -m "first commit"
+git commit -am "my commmit"  # to add and commit
+
+
+# check status of all files 
+git status
+
+# check log of commits
+git log
+
+# connecting to remote-repo
+git remote add origin https://github.com/amanshaw4511/demo.git
+// before doing this create a empty repo in github by browser
+
+# pushing changes to master branch
+git push origin master
+git push -u orgin master  # set upstream master branch
+# means next time we use "git push" and it will push to master branch
+
+# cloning a repo
+git clone http://github.com/amanshaw4511/some-project.git
+
+# pulling changes from master branch
+git pull origin master
+git pull -u origin master # set upstream master branch

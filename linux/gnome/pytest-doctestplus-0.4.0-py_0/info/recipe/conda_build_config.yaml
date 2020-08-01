@@ -1,0 +1,61 @@
+orm
+      # Common symbols not allowed in MH_DYLIB files
+      _LT_TAGVAR(lt_prog_compiler_pic, $1)='-fno-common'
+      case $cc_basename in
+      nagfor*)
+        # NAG Fortran compiler
+        _LT_TAGVAR(lt_prog_compiler_wl, $1)='-Wl,-Wl,,'
+        _LT_TAGVAR(lt_prog_compiler_pic, $1)='-PIC'
+        _LT_TAGVAR(lt_prog_compiler_static, $1)='-Bstatic'
+        ;;
+      esac
+      ;;
+
+    mingw* | cygwin* | pw32* | os2* | cegcc*)
+      # This hack is so that the source file can tell whether it is being
+      # built for inclusion in a dll (and should export symbols for example).
+      m4_if([$1], [GCJ], [],
+	[_LT_TAGVAR(lt_prog_compiler_pic, $1)='-DDLL_EXPORT'])
+      case $host_os in
+      os2*)
+	_LT_TAGVAR(lt_prog_compiler_static, $1)='$wl-static'
+	;;
+      esac
+      ;;
+
+    hpux9* | hpux10* | hpux11*)
+      _LT_TAGVAR(lt_prog_compiler_wl, $1)='-Wl,'
+      # PIC is the default for IA64 HP-UX and 64-bit HP-UX, but
+      # not for PA HP-UX.
+      case $host_cpu in
+      hppa*64*|ia64*)
+	# +Z the default
+	;;
+      *)
+	_LT_TAGVAR(lt_prog_compiler_pic, $1)='+Z'
+	;;
+      esac
+      # Is there a better lt_prog_compiler_static that works with the bundled CC?
+      _LT_TAGVAR(lt_prog_compiler_static, $1)='$wl-a ${wl}archive'
+      ;;
+
+    irix5* | irix6* | nonstopux*)
+      _LT_TAGVAR(lt_prog_compiler_wl, $1)='-Wl,'
+      # PIC (with -KPIC) is the default.
+      _LT_TAGVAR(lt_prog_compiler_static, $1)='-non_shared'
+      ;;
+
+    linux* | k*bsd*-gnu | kopensolaris*-gnu | gnu*)
+      case $cc_basename in
+      # old Intel for x86_64, which still supported -KPIC.
+      ecc*)
+	_LT_TAGVAR(lt_prog_compiler_wl, $1)='-Wl,'
+	_LT_TAGVAR(lt_prog_compiler_pic, $1)='-KPIC'
+	_LT_TAGVAR(lt_prog_compiler_static, $1)='-static'
+        ;;
+      # icc used to be incompatible with GCC.
+      # ICC 10 doesn't accept -KPIC any more.
+      icc* | ifort*)
+	_LT_TAGVAR(lt_prog_compiler_wl, $1)='-Wl,'
+	_LT_TAGVAR(lt_prog_compiler_pic, $1)='-fPIC'
+	_LT_TAGVA

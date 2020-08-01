@@ -1,0 +1,19 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "numpy >=1.10",
+    "pytest >=3.0",
+    "python",
+    "six"
+  ],
+  "license": "BSD 3-Clause",
+  "license_family": "BSD",
+  "name": "pytest-doctestplus",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1569374968481,
+  "version": "0.4.0"
+}

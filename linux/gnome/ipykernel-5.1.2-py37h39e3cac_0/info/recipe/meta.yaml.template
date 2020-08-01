@@ -1,0 +1,50 @@
+    name: "Icon"
+            values: {
+                "NoIcon": 0,
+                "Information": 1,
+                "Warning": 2,
+                "Critical": 3,
+                "Question": 4
+            }
+        }
+        Property { name: "text"; type: "string" }
+        Property { name: "informativeText"; type: "string" }
+        Property { name: "detailedText"; type: "string" }
+        Property { name: "icon"; type: "Icon" }
+        Property { name: "standardIconSource"; type: "QUrl"; isReadonly: true }
+        Property { name: "standardButtons"; type: "QQuickAbstractDialog::StandardButtons" }
+        Property {
+            name: "clickedButton"
+            type: "QQuickAbstractDialog::StandardButton"
+            isReadonly: true
+        }
+        Signal { name: "buttonClicked" }
+        Signal { name: "discard" }
+        Signal { name: "help" }
+        Signal { name: "yes" }
+        Signal { name: "no" }
+        Signal { name: "apply" }
+        Signal { name: "reset" }
+        Method {
+            name: "setVisible"
+            Parameter { name: "v"; type: "bool" }
+        }
+        Method {
+            name: "setTitle"
+            Parameter { name: "arg"; type: "string" }
+        }
+        Method {
+            name: "setText"
+            Parameter { name: "arg"; type: "string" }
+        }
+        Method {
+            name: "setInformativeText"
+            Parameter { name: "arg"; type: "string" }
+        }
+        Method {
+            name: "setDetailedText"
+            Parameter { name: "arg"; type: "string" }
+        }
+        Method {
+            name: "setIcon"
+            Parameter { 

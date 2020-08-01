@@ -1,0 +1,2 @@
+# merge branch to master branch
+git merge master

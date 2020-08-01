@@ -1,0 +1,15 @@
+   if ( lastVersion === vAPI.app.version ) { return; }
+
+    // Since built-in resources may have changed since last version, we
+    // force a reload of all resources.
+    µb.redirectEngine.invalidateResourcesSelfie();
+
+    const lastVersionInt = vAPI.app.intFromVersion(lastVersion);
+
+    // https://github.com/uBlockOrigin/uBlock-issues/issues/494
+    //   Remove useless per-site switches.
+    if ( lastVersionInt <= 1019003007 ) {
+        µb.sessionSwitches.toggle('no-scripting', 'behind-the-scene', 0);
+        µb.permanentSwitches.toggle('no-scripting', 'behind-the-scene', 0);
+        µb.saveHostnameSwitches();
+ 

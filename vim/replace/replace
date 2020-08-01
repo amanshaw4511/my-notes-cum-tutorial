@@ -1,0 +1,47 @@
+### SYNTAX ####
+:[fromLine,toLine]s[ubstutute]/{patter}/{string}/[flags] 
+
+fromLine or toLine :  n  -> line number
+                   :  .  -> current line
+                   :  $  -> last line
+                   :  ^  -> first line
+
+flags       : g  -> global flag ( replace all match in the line)
+            : i  -> case insensitive
+            : c  -> ask for confirmation
+            : n  -> replace n match in the line 
+
+# repeate previous command with same flag
+:&&
+# replace previou command with same flag in line 5,10
+:5,10&&
+
+# replace previous command with same flag in line 5,10 and 15,20
+:5,10s/OLD/NEW/g | 15,20&&
+# or
+:for range in split('5,10 15,20') | exe range 's/OLD/NEW/g' | endfor
+
+
+# replace only in current line
+:s/OLD/NEW/g
+
+# replace in all line form line 5 to 10
+:5,10s/OLD/NEW/g
+
+
+# replace in all lines
+:%s/OLD/NEW/g
+
+# replace in all lines, but ask for confirm
+:%s/OLD/NEW/gc
+
+# replace in all lines, ( case insensitive )
+:%s/OLD/NEW/gi
+
+# replace in all lines, only whole word
+:%s/\<OLD\>/NEW/g
+
+# replace in all lines, replace both OLD1 and OLD2 with NEW
+:%s/OLD1\|OLD2/NEW/g
+
+

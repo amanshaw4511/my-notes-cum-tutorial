@@ -1,0 +1,41 @@
+lse
+      # Make teststring a little bigger before we do anything with it.
+      # a 1K string should be a reasonable start.
+      for i in 1 2 3 4 5 6 7 8; do
+        teststring=$teststring$teststring
+      done
+      SHELL=${SHELL-${CONFIG_SHELL-/bin/sh}}
+      # If test is not a shell built-in, we'll probably end up computing a
+      # maximum length that is only half of the actual maximum length, but
+      # we can't tell.
+      while { test X`env echo "$teststring$teststring" 2>/dev/null` \
+	         = "X$teststring$teststring"; } >/dev/null 2>&1 &&
+	      test 17 != "$i" # 1/2 MB should be enough
+      do
+        i=`expr $i + 1`
+        teststring=$teststring$teststring
+      done
+      # Only check the string length outside the loop.
+      lt_cv_sys_max_cmd_len=`expr "X$teststring" : ".*" 2>&1`
+      teststring=
+      # Add a significant safety factor because C++ compilers can tack on
+      # massive amounts of additional arguments before passing them to the
+      # linker.  It appears as though 1/2 is a usable value.
+      lt_cv_sys_max_cmd_len=`expr $lt_cv_sys_max_cmd_len \/ 2`
+    fi
+    ;;
+  esac
+])
+if test -n "$lt_cv_sys_max_cmd_len"; then
+  AC_MSG_RESULT($lt_cv_sys_max_cmd_len)
+else
+  AC_MSG_RESULT(none)
+fi
+max_cmd_len=$lt_cv_sys_max_cmd_len
+_LT_DECL([], [max_cmd_len], [0],
+    [What is the maximum length of a command?])
+])# LT_CMD_MAX_LEN
+
+# Old name:
+AU_ALIAS([AC_LIBTOOL_SYS_MAX_CMD_LEN], [LT_CMD_MAX_LEN])
+dnl acloc

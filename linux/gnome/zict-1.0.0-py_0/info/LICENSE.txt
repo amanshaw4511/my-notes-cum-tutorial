@@ -1,0 +1,46 @@
+      libobjs=$output
+	      # Append the command to create the export file.
+	      test -z "$concat_cmds" || concat_cmds=$concat_cmds~
+	      eval concat_cmds=\"\$concat_cmds$export_symbols_cmds\"
+	      if test -n "$last_robj"; then
+		eval concat_cmds=\"\$concat_cmds~\$RM $last_robj\"
+	      fi
+	    }
+
+	    test -n "$save_libobjs" &&
+	      func_verbose "creating a temporary reloadable object file: $output"
+
+	    # Loop through the commands generated above and execute them.
+	    save_ifs=$IFS; IFS='~'
+	    for cmd in $concat_cmds; do
+	      IFS=$save_ifs
+	      $opt_quiet || {
+		  func_quote_for_expand "$cmd"
+		  eval "func_echo $func_quote_for_expand_result"
+	      }
+	      $opt_dry_run || eval "$cmd" || {
+		lt_exit=$?
+
+		# Restore the uninstalled library and exit
+		if test relink = "$opt_mode"; then
+		  ( cd "$output_objdir" && \
+		    $RM "${realname}T" && \
+		    $MV "${realname}U" "$realname" )
+		fi
+
+		exit $lt_exit
+	      }
+	    done
+	    IFS=$save_ifs
+
+	    if test -n "$export_symbols_regex" && ${skipped_export-false}; then
+	      func_show_eval '$EGREP -e "$export_symbols_regex" "$export_symbols" > "${export_symbols}T"'
+	      func_show_eval '$MV "${export_symbols}T" "$export_symbols"'
+	    fi
+	  fi
+
+          ${skipped_export-false} && {
+	    if test -n "$export_symbols" && test -n "$include_expsyms"; then
+	      tmp_export_symbols=$export_symbols
+	      test -n "$orig_export_symbols" && tmp_export_symbols=$orig_export_symbols
+	      $opt_dry_run || eval '$

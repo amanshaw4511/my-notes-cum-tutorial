@@ -1,0 +1,14 @@
+grep -i -n <files> <dir>
+-i	:: for ignore case sensitity
+-v	:: show lines whitch are not mached
+-n	:: show line number
+-w	:: show line with exact word
+-c	:: count the no. of matches
+-A 2	:: show 2 lines after the matched line
+-B 2	:: show 2 lines before the matched line
+-C 2	:: show 2 lines after and before the matched line
+
+
+
+
+grep -r "abc" *		:: search recursively

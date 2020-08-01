@@ -1,0 +1,79 @@
+"#numpy.matrix-VS-2D-numpy.ndarray">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>线性代数的基本操作对象是矩阵，而矩阵的表示方法主要有两种：<code>numpy.matrix</code> 和 2D <code>numpy.ndarray</code>。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="numpy.matrix">numpy.matrix<a class="anchor-link" href="#numpy.matrix">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>numpy.matrix</code> 是一个矩阵类，提供了一些方便的矩阵操作：</p>
+<ul>
+<li>支持类似 <code>MATLAB</code> 创建矩阵的语法</li>
+<li>矩阵乘法默认用 <code>*</code> 号</li>
+<li><code>.I</code> 表示逆，<code>.T</code> 表示转置</li>
+</ul>
+<p>可以用 <code>mat</code> 或者 <code>matrix</code> 来产生矩阵：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mat</span><span class="p">(</span><span class="s2">&quot;[1, 2; 3, 4]&quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="nb">repr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">matrix</span><span class="p">(</span><span class="s2">&quot;[1, 2; 3, 4]&quot;</span><span class="p">)</span>
+<span class="k">print</span> <span class="nb">repr</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>matrix([[1, 2],
+        [3, 4]])
+matrix([[1, 2],
+        [3, 4]])
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>转置和�

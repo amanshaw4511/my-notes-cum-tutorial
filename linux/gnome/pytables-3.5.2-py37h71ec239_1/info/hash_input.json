@@ -1,0 +1,11 @@
+{
+  "hdf5": "1.10.4",
+  "cxx_compiler": "gxx",
+  "lzo": "2",
+  "bzip2": "1.0",
+  "c_compiler_version": "7.3.0",
+  "c_compiler": "gcc",
+  "cxx_compiler_version": "7.3.0",
+  "numpy": "1.11",
+  "zlib": "1.2"
+}

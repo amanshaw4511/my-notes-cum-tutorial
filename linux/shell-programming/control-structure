@@ -1,0 +1,99 @@
+...............................
+## if ............................
+...............................
+
+if <cond> ; then <command> ; elif <cond> ; else <command>; fi
+
+...............................
+## while .........................
+...............................
+
+while <cond> ; do <commands> ; done
+
+...............................
+## until .........................
+...............................
+
+until <cond> ; do <commands> ; done
+
+
+...............................
+## for ...........................
+...............................
+
+for i in a b c
+do
+   echo $i
+done
+
+// it prints --- a b c
+...........................
+
+for each in $arr; do
+	echo $each
+done
+
+print array elemnts
+...........................
+for file i $(ls *.sh); do
+   rm file
+done
+
+// it remove all .sh files in current dir
+...........................
+
+for ((i=1; i<=10; i++)); do
+   echo $1
+done
+
+// prints 1 to 10
+
+..............................
+case .........................
+..............................
+
+case "$input" in
+   Y | y | yes )    echo "you are right"
+   N | n | no  )    echo "you are wrong"
+	* )	    echo "invalid selection"
+esac
+...............................
+
+case "$input" in
+   [Yy]* )	echo yes
+   [Nn]* )	echo no
+   *	 )	echo invalid
+
+......................................
+ANDing and ORing commands .............
+........................................
+
+if <cmd1> && <<cmd2> ; then ........; fi
+
+// if command 1 success , do command 2
+// return true if both success
+.....................................
+
+if <cmd1> || <cmd2> ; then .........; fi
+
+// if command 1 unsuccess , do command 2 
+// return true if any one success
+.....................................
+
+.......................................
+statement block ......................
+......................................
+
+// using multiple statement when only one is allowed
+
+<cmd1> && {
+  <cmd2>
+  <cmd3>
+  so on
+}
+
+...........................................
+break and continue .........................
+............................................
+
+used in for while and until loop, like other programming lang

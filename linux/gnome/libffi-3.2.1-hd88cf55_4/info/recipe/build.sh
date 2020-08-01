@@ -1,0 +1,12 @@
+c(${1:session}, ${2:command})" },
+		{ "trigger": "ssh2_fetch_stream", "contents": "ssh2_fetch_stream(${1:channel}, ${2:streamid})" },
+		{ "trigger": "ssh2_fingerprint", "contents": "ssh2_fingerprint(${1:session})" },
+		{ "trigger": "ssh2_methods_negotiated", "contents": "ssh2_methods_negotiated(${1:session})" },
+		{ "trigger": "ssh2_publickey_add", "contents": "ssh2_publickey_add(${1:pkey}, ${2:algoname}, ${3:blob})" },
+		{ "trigger": "ssh2_publickey_init", "contents": "ssh2_publickey_init(${1:session})" },
+		{ "trigger": "ssh2_publickey_list", "contents": "ssh2_publickey_list(${1:pkey})" },
+		{ "trigger": "ssh2_publickey_remove", "contents": "ssh2_publickey_remove(${1:pkey}, ${2:algoname}, ${3:blob})" },
+		{ "trigger": "ssh2_scp_recv", "contents": "ssh2_scp_recv(${1:session}, ${2:remote_file}, ${3:local_file})" },
+		{ "trigger": "ssh2_scp_send", "contents": "ssh2_scp_send(${1:session}, ${2:local_file}, ${3:remote_file})" },
+		{ "trigger": "ssh2_sftp", "contents": "ssh2_sftp(${1:session})" },
+		{ "trigger": "ssh2_sftp_lstat", "contents": "ssh2_sf

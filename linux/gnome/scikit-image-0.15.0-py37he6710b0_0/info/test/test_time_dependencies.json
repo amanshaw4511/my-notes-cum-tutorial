@@ -1,0 +1,1 @@
+["pytest-cov", "numpy 1.11.*", "pytest-localserver", "pytest"]

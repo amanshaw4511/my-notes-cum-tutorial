@@ -1,0 +1,18 @@
+
+:echo hello
+hello
+
+:echom "how are you"
+how are you
+
+:messages
+how are you
+
+# conclusion
+echom saves tha message which can be viewed later
+
+
+
+# commenting in vim script
+
+" this is a comment

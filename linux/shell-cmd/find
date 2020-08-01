@@ -1,0 +1,3 @@
+find <dir> -maxdepth ? -type [f,d] -name ? -size ?
+-name = -iname		:: for no case sensitive
+-size +50k

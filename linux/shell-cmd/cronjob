@@ -1,0 +1,29 @@
+### cronjob has two main mode
+## system cronjob
+/etc/crontab	-> schedule job to be done by system
+/etc/crontab.hourly	-> specify job to be repeat daily
+/etc/crontab.daily
+/etc/crontab.weekly
+/etc/crontab.monthly
+/etc/crontab.yearly
+
+/etc/crontab.d/file	-> sepcify jobs  to be repeated on custom time
+
+hour	day	day.of.month	month.of.year	days.of.week	user	command
+
+
+
+## user cronjob
+/tmp/pool/.../crontab/username
+
+hour 	day 	day.of.month	month.of.year	days.of.week	command
+
+# user can see cronjob by
+cronjob -l
+
+# user can edit cronjob by
+cronjob -e
+
+# root can see any user cronjob by viewing their file dir /tmp..............
+# or by using
+cronjob -e -u username

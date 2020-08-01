@@ -1,0 +1,121 @@
+x-sizing rendered_html">
+<p>但事实上，数组所占的存储空间要比这个数字大，因为要用一个header来保存shape，dtype这样的信息。</p>
+<p>查看数组维数：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a</span><span class="o">.</span><span class="n">ndim</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[13]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>1</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#20351;&#29992;fill&#26041;&#27861;&#35774;&#23450;&#21021;&#22987;&#20540;">&#20351;&#29992;fill&#26041;&#27861;&#35774;&#23450;&#21021;&#22987;&#20540;<a class="anchor-link" href="#&#20351;&#29992;fill&#26041;&#27861;&#35774;&#23450;&#21021;&#22987;&#20540;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>可以使用 <code>fill</code> 方法将数组设为指定值：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">a</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="o">-</span><span class="mf">4.8</span><span class="p">)</span>
+<span class="n">a</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[14]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>array([-4, -4, -4, -4])</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>但是与列表不同，数组中要求所有元素的 <code>dtype</code> 是一样的，如果传入参数的类型与数组类型不一样，需要按照已有的类型进行转换。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#32034;&#24341;&#19982;&#20999;&#29255;">&#32034;&#24341;&#19982;&#20999;&#29255;<a class="anchor-link" href="#&#32034;&#24341;&#19982;&#20999;&#29255;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>和列表相似，数组也支持索引和切片操作。</p>
+<p>索引第一个元素：</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n

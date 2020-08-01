@@ -1,0 +1,57 @@
+                                  Iterable(I)
+                                      |
+                                 Collection(I)
+                                      |  
+            __________________________|_____________________
+            |                         |                    |
+       Set(I)                       List(I)               Queue(I)
+     _____|______                ______!______          _____|_____
+    !            |              !      !      !        |           !
+HashSet    SortedSet(I)   ArrayList  Vector    !    Deque(I)    PriorityQueue
+  |              |                     |        !  ____!_____
+  |              |                     |         !!         !
+LinkedHashSet  NavigationSet(I)      Stack    LinkedList  ArrayDeque
+                 !
+                 !
+               TreeSet
+
+
+
+Set(I) : store unique elements
+                Implementation   Ordering&Sorted  NullAllowed Performance
+HashSet          HashMap          unOrdered         one       fastest_O(1)
+LinkedHashSet    LinkedHashMap    insetedOrder      one       fast_O(1)  
+TreeSet          TreeMap          sortedOrder       no        slow_O(logn)
+
+
+List(I) :
+               Implementation      Insert_Remove   get_set_sorting
+ArrayList      dynameiArray           slow          fast
+LinkedList     doubleLinkedList       fast          slow
+Vector    -   Synchronised ArrayList , Deprecated
+
+
+                              Map(I)
+                 _______________|_________________
+                !               !                 |
+           Hashtable         HashMap           SortedMap(I)
+                                |                 |
+                            LinkedHashMap      NavigableMap(I)
+                                                  !
+                                               TreeMap
+
+Map(I) : key,value pair and unique key
+                Implementation     ordering&Sorted  NullKeyAllowed Perform
+HashMap         dynamicArray        unordered           yes          O(1)
+LinkedHashMap   doublyLinkedList    insertedOrder       yes          O(1)
+TreeMap         redBlackTree        sortedOrder         no           O(lonn)
+Hashtable  -  Synchronised HashMap, Deprecated
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,89 @@
+field="tabGroup" value="true"/>
+			<prop field="tabStop" value="true"/>
+			<prop field="tabOrder" value="105"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="autoHeight" value="true"/>
+			<prop field="animate" value="true"/>
+			<prop field="border" value="0,0,0,0"/>
+			<prop field="zOrder" value="10"/>
+			<prop field="toolTip" value="最大化"/>
+			<prop field="face" value="1"/>
+			<prop field="normalBackground">
+				<value>
+					<Texture file="@thisres:button\max.png"/>
+				</value>
+			</prop>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="@thisres:button\max.png"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="@thisres:button\max.png"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="No_Title_Window" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="false"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="smallIcon"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="No_Title_Window_With_Close" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="backgroundAnimation" value="true"/>
+			<prop field="border" value="0, 0, 0, 0"/>
+			<prop field="ncArea" value="0, 0,0, 0"/>
+			<prop field="showMaxButton" value="false"/>
+			<prop field="showMinButton" value="false"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="fixSize" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="sysButtonOffset" value="-10,4"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="Wechat_Min_Close_Window" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop field="background">
+				<value>
+					<Shape shape="Rectangle" borderWidth="1" clrBorder="0xff0c1119">
+						<fill>
+							<Brush clrFrom="0xFF242633"/>
+						</fill>
+					</Shape>
+				</value>
+			</prop>
+			<prop field="backgroundAnimation" value="false"/>
+			<prop field="smallIconSize" value="14,14"/>
+			<prop field="bigIcon"/>
+			<prop field="smallIcon" value="@thisres:img\logo.png"/>
+			<prop field="border" value="6, 6, 6, 6"/>
+			<prop field="ncArea" value="0, 35,0, 0"/>
+			<prop field="titleGap" value="8"/>
+			<prop field="sysButtonOffset" value="-72,4"/>
+			<prop field="titleTextActivateColor" value="0xff86878f"/>
+			<prop field="titleTextInactivateColor" value="0xff86878f"/>
+			<prop field="titleTextFont" value="#platform.Font.Title"/>
+			<prop field="titleOffset" value="12,6"/>
+			<prop field="showMaxButton" value="true"/>
+			<prop field="showMinButton" value="true"/>
+			<prop field="showCloseButton" value="true"/>
+			<prop field="sysButtonConfig" value="aesysbutton"/>
+			<prop field="fixSize" value="false"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="SettingCenter_Window" configType="IGFStandardWin">
+		<configProp>
+			<!-- 只有关闭按钮但带icon窗口config-->
+			<prop f

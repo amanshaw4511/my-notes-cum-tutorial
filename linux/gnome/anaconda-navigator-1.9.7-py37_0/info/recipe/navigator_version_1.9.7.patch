@@ -1,0 +1,11 @@
+diff --git a/anaconda_navigator/__init__.py b/anaconda_navigator/__init__.py
+index d6c23d34..abd69be8 100644
+--- a/anaconda_navigator/__init__.py
++++ b/anaconda_navigator/__init__.py
+@@ -7,5 +7,5 @@
+ # -----------------------------------------------------------------------------
+ """Anaconda Navigator."""
+ 
+-version_info = (1, 9, 7, 'dev0')
++version_info = (1, 9, 7)
+ __version__ = '.'.join(map(str, version_info))

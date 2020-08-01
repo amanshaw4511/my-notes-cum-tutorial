@@ -1,0 +1,72 @@
+pip install flask-wtf
+
+standard form fields
+
+
+TextField               text
+BooleanField            checkbox
+DecimalField            text field to display decimal number
+IntegerField            text filed to display integer number
+RadioField              radio button
+SelectField             select form
+TextAreaField           text area
+PasswordField           password
+SubmitField             submit button
+
+
+
+
+from flask_wtf import Form
+from wtforms import TextField, IntegerField ........ fields
+from wtforms import validators, ValidationError
+
+cllass ContactForm(Form):
+    name = TextField("Candidate Name", [validators.Required("Please enter you name ")])
+    gender = RadioField("Gender ", choice = [('M','Male'),('F','Female'))
+    address = TextAreaField("Address",[
+    validators.Email("please enter you email address ")])
+
+    age = IntegerField("Age"
+    language = SelectField("Programming Languages". choices=[('java','Java'),('py','Python')])
+    submit = SubmitField("Submit")
+
+
+
+@app.route('/contact',methods=['GET','POST'])
+def contact():
+    form = ContactForm()
+    if form.validate() == False :
+        flash('All fields are required')
+    return render_template('contact.html',form=from)
+
+
+.........................................................
+
+{% for message in form.name.errors %}
+    <div> {{ message }} </div>
+{% endfor %}
+
+{% for message in form.email.errors %}
+    <div> {{ message }} </div>
+{% endfor %}
+
+
+
+<form action="/success" method = "POST">
+    {{ form.hidden_tag() }}
+
+    <div>
+        {{ form.name.label }} <br>
+        {{ form.name }} 
+        <br>
+        {{ form.gender.label }} <br>
+        {{ form.gender }} 
+        <br>
+        .
+        .
+        .
+        .
+     </div>
+  </fieldset>
+</form>
+

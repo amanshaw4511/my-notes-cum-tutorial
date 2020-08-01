@@ -1,0 +1,10 @@
+{
+  "blas_impl": "mkl",
+  "fortran_compiler_version": "7.3.0",
+  "fortran_compiler": "gfortran",
+  "numpy_version": "1.17.2",
+  "c_compiler": "gcc",
+  "numpy": "1.11",
+  "c_compiler_version": "7.3.0",
+  "mkl": "2019"
+}

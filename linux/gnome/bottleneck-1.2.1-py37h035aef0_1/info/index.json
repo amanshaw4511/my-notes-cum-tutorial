@@ -1,0 +1,17 @@
+{
+  "arch": "x86_64",
+  "build": "py37h035aef0_1",
+  "build_number": 1,
+  "depends": [
+    "libgcc-ng >=7.2.0",
+    "numpy >=1.11.3,<2.0a0",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "license": "BSD 2-Clause",
+  "license_family": "BSD",
+  "name": "bottleneck",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1530781554326,
+  "version": "1.2.1"
+}

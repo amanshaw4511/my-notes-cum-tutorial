@@ -1,0 +1,11 @@
+{
+  "paths": [
+    {
+      "_path": "bin/rg",
+      "path_type": "hardlink",
+      "sha256": "63b45a43f041c5ef05bde61c34805fa4fb9298c23f37055c531f2e0519abfbf4",
+      "size_in_bytes": 3726328
+    }
+  ],
+  "paths_version": 1
+}

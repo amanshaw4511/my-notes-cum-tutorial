@@ -1,0 +1,7 @@
+# diff change in commits
+git diff commit_1_hash commit_2_hash
+
+# diff change in branch
+git diff dev		# im in master branch
+
+

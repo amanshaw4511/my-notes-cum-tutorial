@@ -1,0 +1,39 @@
+bash histroy are save in "~/.bash_history
+
+#bash history
+
+ctrl + N   - next command history
+ctrl + P   - prev command history
+ctrl + R   - backward search in command history
+ctrl + S   - forward seaech in command history
+ctrl + G   - terminate search in command history
+
+# command editing
+
+// move within the line
+ctrl + A  - move curser to start of line
+ctrl + E  - move curser to end of line
+ctrl + F  - move curser forward by 1 char.(-> key)
+ctrl + B  - move curser backward by 1 char. (<- key)
+esc + B || ctrl + <-   move curser backward by 1 word
+esc + F || ctrl + ->   move curser forward by 1 word
+
+// delete text
+ctrl + D || del   delete the char under curser
+backspace	  delete char backward
+ctrl + K	  delete all char after curser
+ctrl + x + backspc  delete all char before curser
+
+// transpose text
+ctrl + T	teanspose char under cur with before curser
+esc + T		transpose char under cur with after curser
+
+// change case
+esc + U		change chars from cur to EOW to upper case
+esc + L		change chars from cur to EOW to lower case
+esc + C		change cur char to upper case
+
+// invoke a editor
+ctrl + X then ctrl + E	   launch editor to edit command
+
+

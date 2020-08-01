@@ -1,0 +1,73 @@
+p">(</span><span class="s1">&#39;[1 3 2; 1 4 5; 2 3 6]&#39;</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">A</span>
+
+<span class="n">T</span><span class="p">,</span> <span class="n">Z</span> <span class="o">=</span> <span class="n">linalg</span><span class="o">.</span><span class="n">schur</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+<span class="k">print</span> <span class="n">T</span><span class="p">,</span> <span class="n">Z</span>
+
+<span class="k">print</span> <span class="n">Z</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Z</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[[1 3 2]
+ [1 4 5]
+ [2 3 6]]
+[[ 9.90012467  1.78947961 -0.65498528]
+ [ 0.          0.54993766 -1.57754789]
+ [ 0.          0.51260928  0.54993766]] [[ 0.36702395 -0.85002495 -0.37782404]
+ [ 0.63681656 -0.06646488  0.76814522]
+ [ 0.67805463  0.52253231 -0.51691576]]
+[[ 1.  3.  2.]
+ [ 1.  4.  5.]
+ [ 2.  3.  6.]]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="&#30697;&#38453;&#20989;&#25968;">&#30697;&#38453;&#20989;&#25968;<a class="anchor-link" href="#&#30697;&#38453;&#20989;&#25968;">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>考虑函数 $f(x)$ 的泰勒展开：
+$$
+f\left(x\right)=\sum_{k=0}^{\infty}\frac{f^{\left(k\right)}\left(0\right)}{k!}x^{k}
+$$</p>
+<p>对于方阵，矩阵函数可以定义如下：
+$$
+f\left(\mathbf{A}\right)=\sum_{k=0}^{\infty}\frac{f^{\left(k\right)}\left(0\right)}{k!}\mathbf{A}^{k}
+$$</p>
+<p>这也是计算矩阵函数的最好的方式。</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="&#25351;&#25968;&#21644;&#23545;&#25968;&#20989;&#25968;">&#25351;&#25968;&#21644;&#23545;&#259

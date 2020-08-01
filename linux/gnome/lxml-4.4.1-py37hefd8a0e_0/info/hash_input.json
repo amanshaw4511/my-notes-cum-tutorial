@@ -1,0 +1,6 @@
+{
+  "c_compiler_version": "7.3.0",
+  "libxml2": "2.9",
+  "c_compiler": "gcc",
+  "libxslt": "1.1"
+}

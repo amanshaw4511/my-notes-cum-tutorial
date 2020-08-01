@@ -1,0 +1,46 @@
+# https://github.com/ziishaned/learn-regex
+
+.	single character
+[]	any single char between the square bracket
+[^]	any single char which is not in square bracket
+
+------------- for repetetion ----------
+*	0 or more repetetion of preceding symbol
++	1 or more repetetion of preceding symbol
+?	makes preceding symbol optional
+{n,m}	range of repetetion of preceding char
+	{n}	exactly n repetetion
+	{n,}	n or more repetetion
+	
+-----------------------------------------------
+
+(xyz)	char group match char xyz in exact order
+|	match either the char before the symbol or after the symbol
+\	escape sequence
+^	starts with
+$	ends with
+
+###### SHORTHAND CHARTER SETS #########
+.	any char except newline
+\w	[a-zA-Z0-9_]
+\W	[^\w]
+\d	[0-9]
+\D	[^0-9]
+\s	[\t\n\f\r\p{Z}]
+\S	[^s']
+
+###### 	LOOK AROUND ############
+?=	+ve look ahead
+?!	-ve look ahead
+?<=	+ve look behind
+?<!	-ve look behind
+
+
+###### 	FLAGS ##########
+i	case insensitive
+g	global search ( find all matchs)
+m	multiline match ( perform ancher match in all lines)
+
+
+
+

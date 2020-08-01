@@ -1,0 +1,92 @@
+utton">
+		<configProp>
+			<prop field="texture" value="commonres:Button\\aio_bluebar_close.bmp"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="winsbservice" configType="IGFWinSBService" comboConfig="horzscrollbar,vertscrollbar">
+		<configProp>
+			<prop field="bkgCross">
+				<value>
+					<Texture file="commonres:ScrollBar\\All_horzscrollbar_bkgHorz.gft"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="textbutton" configType="IGFButton" forCommon="TRUE">
+		<configProp>
+			<prop field="border" value="1,3,1,3"/>
+			<prop field="normalColor" value="#@this.TextColor.HighLink"/>
+			<prop field="highlightColor" value="#@this.TextColor.HighLink"/>
+			<prop field="pushedColor" value="#@this.TextColor.HighLink"/>
+			<prop field="highlightBackground">
+				<value>
+					<Texture file="commonres:Button\All_textbutton_highlightBackground.gft"/>
+				</value>
+			</prop>
+			<prop field="pushedBackground">
+				<value>
+					<Texture file="commonres:Button\all_textbutton_pushedBackground.gft"/>
+				</value>
+			</prop>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="checkbutton" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="commonres:CheckButton\checkbutton_checkedhoverTexture.gft"/>
+			<prop field="checkedNormalTexture" value="commonres:CheckButton\checkbutton_checkedNormalTexture.gft"/>
+			<prop field="checkedPushedTexture" value="commonres:CheckButton\checkbutton_checkedPushedTexture.gft"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+			<prop field="uncheckedHighlightTexture" value="commonres:CheckButton\checkbutton_uncheckedhoverTexture.gft"/>
+			<prop field="uncheckedNormalTexture" value="commonres:CheckButton\checkbutton_uncheckedNormalTexture.gft"/>
+			<prop field="uncheckedPushedTexture" value="commonres:CheckButton\checkbutton_uncheckedPushedTexture.gft"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="commonres:CheckButton\halfcheckbutton_checkedhoverTexture.gft"/>
+			<prop field="halfcheckedNormalTexture" value="commonres:CheckButton\halfcheckbutton_checkedNormalTexture.gft"/>
+			<prop field="halfcheckedPushedTexture" value="commonres:CheckButton\halfcheckbutton_checkedPushedTexture.gft"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="checkbutton_NotTransparent" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="commonres:CheckBoxNotTransparent\checkbutton_checkedhoverTexture_notTransparent.gft"/>
+			<prop field="checkedNormalTexture" value="commonres:CheckBoxNotTransparent\checkbutton_checkedNormalTexture_notTransparent.gft"/>
+			<prop field="checkedPushedTexture" value="commonres:CheckBoxNotTransparent\checkbutton_checkedPushedTexture_notTransparent.gft"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+			<prop field="uncheckedHighlightTexture" value="commonres:CheckBoxNotTransparent\checkbutton_uncheckedhoverTexture_notTransparent.gft"/>
+			<prop field="uncheckedNormalTexture" value="commonres:CheckBoxNotTransparent\checkbutton_uncheckedNormalTexture_notTransparent.gft"/>
+			<prop field="uncheckedPushedTexture" value="commonres:CheckBoxNotTransparent\checkbutton_uncheckedPushedTexture_notTransparent.gft"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="commonres:CheckBoxNotTransparent\halfcheckbutton_checkedhoverTexture_notTransparent.gft"/>
+			<prop field="halfcheckedNormalTexture" value="commonres:CheckBoxNotTransparent\halfcheckbutton_checkedNormalTexture_notTransparent.gft"/>
+			<prop field="halfcheckedPushedTexture" value="commonres:CheckBoxNotTransparent\halfcheckbutton_checkedPushedTexture_notTransparent.gft"/>
+		</configProp>
+	</ConfigAgent>	
+	<ConfigAgent name="checkbutton_NoTextClore" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="commonres:CheckButton\checkbutton_checkedhoverTexture.gft"/>
+			<prop field="checkedNormalTexture" value="commonres:CheckButton\checkbutton_checkedNormalTexture.gft"/>
+			<prop field="checkedPushedTexture" value="commonres:CheckButton\checkbutton_checkedPushedTexture.gft"/>
+			<prop field="uncheckedHighlightTexture" value="commonres:CheckButton\checkbutton_uncheckedhoverTexture.gft"/>
+			<prop field="uncheckedNormalTexture" value="commonres:CheckButton\checkbutton_uncheckedNormalTexture.gft"/>
+			<prop field="uncheckedPushedTexture" value="commonres:CheckButton\checkbutton_uncheckedPushedTexture.gft"/>
+			<prop field="autoWidth" value="true"/>
+			<prop field="halfcheckedHighlightTexture" value="commonres:CheckButton\halfcheckbutton_checkedhoverTexture.gft"/>
+			<prop field="halfcheckedNormalTexture" value="commonres:CheckButton\halfcheckbutton_checkedNormalTexture.gft"/>
+			<prop field="halfcheckedPushedTexture" value="commonres:CheckButton\halfcheckbutton_checkedPushedTexture.gft"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="taskmgr_checkbutton" configType="IGFCheckButton">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="commonres:CheckButton\taskmgr_checkbutton_checked.png"/>
+			<prop field="checkedNormalTexture" value="commonres:CheckButton\taskmgr_checkbutton_checked.png"/>
+			<prop field="checkedPushedTexture" value="commonres:CheckButton\taskmgr_checkbutton_checked.png"/>
+			<prop field="clrText" value="#@this.TextColor.Text"/>
+			<prop field="uncheckedHighlightTexture" value="commonres:CheckButton\taskmgr_checkbutton_unchecked.png"/>
+			<prop field="uncheckedNormalTexture" value="commonres:CheckButton\taskmgr_checkbutton_unchecked.png"/>
+			<prop field="uncheckedPushedTexture" value="commonres:CheckButton\taskmgr_checkbutton_unchecked.png"/>
+			<prop field="autoWidth" value="true"/>
+		</configProp>
+	</ConfigAgent>
+	<ConfigAgent name="radiobutton" configType="IGFCheckButton" forCommon="TRUE">
+		<configProp>
+			<prop field="checkedHighlightTexture" value="commonres:radiobutton\radiobutton_checkedhoverTexture.gft"/>
+			<prop field="checkedNormalTexture" value="commonres:radiobutto

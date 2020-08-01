@@ -1,0 +1,17 @@
+{
+  "arch": null,
+  "build": "py_0",
+  "build_number": 0,
+  "depends": [
+    "backports.os",
+    "importlib_metadata >=0.5",
+    "python >=3.5"
+  ],
+  "license": "MIT",
+  "name": "path.py",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1555430130944,
+  "version": "12.0.1"
+}

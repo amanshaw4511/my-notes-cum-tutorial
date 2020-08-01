@@ -1,0 +1,73 @@
+import sqlite3
+
+conn = sqlite3.connect('employee.db')
+cur = conn.cursor()
+cur.execute('select * from Employee')
+conn.commit()
+conn.rollback()
+rows = cur.fetchall()
+for row in rows :
+    print(row['id'],row['name'],row['email'],row['address'])
+
+
+
+
+
+#####################################################3
+      CRUD APP
+################################################3
+
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+@app.route('/add', methods=['GET','POST'])
+def add():
+    if request.method == 'GET' :
+        return render_template('add.html')
+
+    name = request.form['name']
+    email = request.form['email']
+    address = request.form['address']
+    try :
+        with sqlite3.connect('employee.db') as conn :
+            cur = conn.curser()
+            cur.execute("INSERT int Employee (name,email,address) values (?,?,?)", (name,email,address))
+            con.commit()
+            message = "Employee successfully Added"
+    except :
+        con.rollback()
+        message = "We can not add Employee to list"
+    finally :
+        return render_template("success.html",msg=message)
+        con.close()
+
+
+@app.route('/view')
+def view():
+    conn = sqlite3.connect("employee.db")
+    cur = conn.cursor()
+    cur.execute("select * form employee")
+    rows = cur.fetchall()
+    return render_template("view.html",rows=rows)
+    conn.close()
+
+@app.route('delete',methods=['GET','POST')
+def delete():
+    if request.method == 'GET'
+        return render_template('delete.html')
+
+    id = request.form['id']
+    conn = sqlite3.connect('Employee.db')
+    try :
+        cur = conn.cursor()
+        cur.execute("delete from Employee where id = ?", id)
+        msg = "record successfully deleted"
+    except :
+        msg = "can't be deleted"
+    finally:
+        return render_template("delet_record.html",msg=msg)
+        conn.close()
+
+
+

@@ -1,0 +1,51 @@
+Flask provides the flash() method, in the same way, the client-side scripting language like JavaScript uses the alerts or the python GUI framework Tkinter uses the dialogue box or the message box.
+
+flash(message[,category])
+..............................................................
+
+
+* The messages are generated in flask script using flash() method in flask module.
+* these message is extracted in the template from the templat using 
+    get_flashed_messages() method
+
+get_flashed_messages(with_categories,category_filter)
+    both parameter are optinal
+................................................................
+
+app.secret_key = "abcldfskflj"
+@app.route('/login',methods = ['GET','POST'])
+def login():
+    if request.method == "POST":
+        if request.form['pass'] == 'mypassword':
+            flash("you are successfuly logged in")
+            return redirect(url_for("home"))
+         else :
+            flash("invalid password")
+            return redirect(url_for("login"))
+     else :
+        return render_template("login.html")
+
+""" login.html """
+{% for message in get_flashed_messages() %}
+    <p> {{ message }} </p>
+{% endfor %}
+
+<form action="/login" method="post">
+    <input type="email" name="email">
+    <input type="password" name="pass">
+    <input type="submit" value="login">
+</form>
+""""""""""""""""""""""""""""""""""""""""""
+
+""" home.html """
+
+{% for message in get_flashed_messages() %}
+    <p> {{ message }} </p>
+{% endfor %}
+  ...
+  ...
+
+""""""""""""""""""""""""""""""""""""""""""""
+
+
+

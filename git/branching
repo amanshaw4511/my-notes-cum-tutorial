@@ -1,0 +1,12 @@
+# list no. of branch
+git branch      # show branch in local-repo
+git branch -a   # show all brnach local and online
+
+# create a new branch
+git checkout -b dev
+
+# swithcing to other branch
+git checkout dev
+
+# delete a branch
+git checkout -d dev

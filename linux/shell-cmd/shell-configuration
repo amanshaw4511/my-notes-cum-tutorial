@@ -1,0 +1,4 @@
+~/.bashrc and ~/.profile    -- main user config file
+/etc/bashrc and /etc/profile   -- main global config file
+
+

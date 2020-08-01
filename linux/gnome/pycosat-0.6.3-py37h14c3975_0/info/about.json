@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Theme>
+  <TG name="TextColor" comment="文字颜色分类">
+    <TV name="Title" value="0xFFFFFF" type="color" comment="标题颜色"/>
+    <TV name="Text" value="0x383838" type="color" comment="正文颜色"/>
+	<TV name="TextRed" value="0xff0000" type="color" comment="红色颜色"/>
+    <TV name="UI" value="0x383838" type="color" comment="界面文字颜色"/>
+	<TV name="Auxiliary" value="0x7A7A7A" type="color" comment="辅助文字颜色"/>
+	<TV name="Warn" value="0xe45c27" type="color" comment="警告文字颜色"/>
+    <TV name="Black" value="0x000000" type="color" comment="黑色文字"/>
+    <TV name="White" value="0xFFFFFF" type="color" comment="白色文字"/>
+	<TV name="Green" value="0x029A47" type="color" comment="绿色文字"/>
+    <TV name="Disable" value="0xAFAFAF" type="color" comment="disable"/>
+    <TV name="Reverse" value="0xFFFFFF" type="color" comment="反色"/>
+    <TV name="Gray" value="0x7A7A7A" type="color" comment="灰度颜色"/>
+    <TV name="LowLink" value="0x002d4d" type="color" comment="低调链接文字颜色"/>
+    <TV name="HighLink" value="0x1670eb" type="color" comment="强调链接文字颜色，普通"/>
+    <TV name="MasterHighLink" value="0x047ECB" type="color" comment="强调链接文字颜色，普通"/>
+    <TV name="MasterHighColorLink" value="0x00A0E9" type="color" comment="强调链接文字颜色，高亮"/>
+    <TV name="ClinicMasterHighLink" value="0xffffff" type="color" comment="电脑诊所强调链接文字颜色，普通"/>
+    <TV name="ClinicGobackHighLink" value="0x0580ce" type="color" comment="电脑诊所返回链接文字颜色，普通"/>
+    <TV name="HighLinkTips" value="0xeb2c00" type="color" comment="强调链接文字颜色，红色"/>
+    <TV name="HighLinkVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，粉红色"/>
+    <TV name="HighLinkHighlight" value="0x1670eb" type="color" comment="强调链接文字颜色，高亮"/>
+    <TV name="HighLinkHighlightVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，高亮粉红色"/>
+    <TV name="HighLinkPushed" value="0x1670eb" type="color" comment="强调链接文字颜色，按下"/>
+    <TV name="HighLinkPushedVip" value="0xf58a6e" type="color" comment="强调链接文字颜色，按下粉红色"/>
+    <TV name="NormalLink" value="0x0072C1" type="color" comment="普通链接文字颜色，普通"/>
+    <TV name="TrojanNormalLink" value="0x383838" type="color" comment="木马普通链接文字颜色，普通"/>
+    <TV name="NormalLinkHighlight" value="0x1670eb" type="color" comment="普通链接文字颜色，高亮"/>
+    <TV name="NormalLinkPushed" value="0x1670eb" type="color" comment="普通链接文字颜色，按下"/>
+    <TV type="file" name="groupDirect_0" value="appres:Bubb

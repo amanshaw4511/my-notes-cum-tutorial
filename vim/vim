@@ -1,0 +1,121 @@
+## moving of curser
+# by one char
+	k			-> up
+h		;		-> left-right
+	j			-> down
+
+# by one word
+b			-> move curser to begining of the word (moves backward)
+e			-> move curser to end of word (moves forward)
+w			-> move curser to begining of the next word (moves forward) 
+ 
+# by line
+$ 			-> move to begining of line
+^			-> move to end of line
+gg			-> move to first line 
+2gg			-> move to 2nd line
+G			-> move to last line
+
+ctrl + g		-> show filename, percent, total line 
+
+## insert
+a			-> insert after cursor (append)
+o			-> insert in next line
+O			-> insert in prev line
+
+i			-> insert before cursor / inner command
+diw			-> delete inner word : delete the current word in which the curser is
+ci[			-> change ineer [] : this will delete all inside [] and enter into insert mode
+cip			-> paragraph
+ci<h1>			-> works with html tags
+
+
+
+## replace
+r			-> replace char before cursor with other char
+R			-> enter to replace mode
+			- over write the charcters
+			- backspace to erase
+
+## delete
+d motion		-> delete
+x			-> delete one char before cursor
+
+## copy
+y motion		-> copy
+
+## paste or put
+p			-> paste the deleted or coppied text
+
+## change
+c motion		-> d{motion} i
+
+## indent
+>2j			-> indent current and next 2 line 
+<2k			-> unindent current and prev 2 line
+
+## undo redo
+u			-> undo last command
+U			-> return to initial state of current line
+
+ctrl + r		-> redo
+
+## search
+f[char]			-> move to the first finding of char ( curser after the char / char is included )
+F[char]			-> move to the first finding of char in reverse dir. 
+t[char]			-> move to the first finding of char ( curser before the char / char not included)
+T[char]			-> move to the first finding of char in reverse dir.
+:/word			-> forward search
+:?word			-> backward search
+then press enter
+n			-> next match
+N			-> prev match
+:/word\c		-> ignore case
+
+
+## matching parentheses search ),},]
+move cursor to ( , { or [
+then press %
+it will move you to closing bracket and vice versa
+
+## substitute
+:s/abc/ABC		-> replace abc with ABC ( first occurence )
+:s/abc/ABC/g		-> all occurence in line
+:m,ns/abc/ABC/g		-> all occurence in lines ranges {m,n}
+:%s/abc/ABC/g		-> all occurence in file
+:%s/abc/ABC/gc		-> all occurence in whole file with prompt to ask
+
+## execute
+:!command		-> execute external command 
+
+## save and exit
+:w			-> save current file
+:w fileName		-> save as fileName        
+:q			-> exit
+:q!			-> exit without making change
+:wq			-> save and exit
+
+## insert gogogo
+3igo + esc
+
+## repeat the prev command
+"."
+
+## visual mode
+v			-> visual mode
+// now use motion key to select text
+:w fileName 		-> save selected text in fileName
+d			-> delete text
+c			-> copy text
+p			-> paste text
+
+
+## read file
+:r fileName		-> insert content of fileName in curr file
+:r !command		-> insert output of command in curr file
+
+## enable relative numbering
+:set relativenumber
+
+
+

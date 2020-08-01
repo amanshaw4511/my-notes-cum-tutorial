@@ -1,0 +1,30 @@
+
+to declare custom exception
+
+pubic Bank{
+    int balence; 
+    ........
+    ........
+
+    public int deduct(int amount) throws MyException{
+        if(this.balence<amount){
+            throw new MyException(this.balence, amount);
+        }
+        else{
+            this.balence -= amount;
+            return this.balence;
+        }
+    }
+}
+
+
+Class MyException extends Exception{
+    int negativeBalence;
+    MyException(int balence, int deductionAmount){
+        this.negativeBalence = balence - deductionAmount;
+    }
+
+    public String toString(){
+        return "Not Enough Balence : "+ this.negativeBalence ;
+    }
+}

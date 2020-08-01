@@ -1,0 +1,36 @@
+There are two ways to create thread
+    1. by extending Thread class
+    2. by implementing Runnable interface
+        -- advantage of implementing runnable interface is you can also extend the class with other class
+
+
+1. by extending Thread class
+        and overriding run method
+
+class Multi extends Thread{
+    public void run(){
+        System.out.println("Thread is running");
+    }
+}
+public Demo{
+public static void main(String[] argv){
+    Thread th = new Multi();
+    th.run();
+    // output : Thread is running
+}
+}
+
+
+2. by implementing Runnable interface
+
+class Multi implements Runnable{
+    public void run(){
+        System.out.println("Thread is running");
+    }
+}
+public class Test{
+public static void main(String[] argv){
+    Thread th = new Thread(new Multi());
+    th.run();
+}
+}

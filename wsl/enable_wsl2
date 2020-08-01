@@ -1,0 +1,25 @@
+1. turn on these two feature :
+	a. windows subsystem for linux
+	b. virtual machine platform
+
+2. install any linux distro from windows store
+
+3. open cmd as admin
+	- to list installed distros
+	$ wsl -l
+
+	- to show wsl verson running on each distro
+	$ wsl -l -v
+
+	- to change to wls 2 version
+	$ wsl --set-version "distro name" 2
+
+	- set default destro for wsl
+	$ wsl -s "distro name"
+	
+	- set default install version 2 for any distro
+	$ wsl --set-default-version 2
+
+
+4. for more info run
+	$ wsl --help

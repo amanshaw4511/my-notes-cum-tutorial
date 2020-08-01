@@ -1,0 +1,23 @@
+Flask.redirect(<location>, <status-code>, <response>)
+
+# redirect to home function route
+return redirect(url_for("home"))
+
+
+
+Flask.abort(<code>)
+
+400 : bad request
+401 : unauthorized access
+402 :
+403 : forbidden
+404 : file not found
+405 :
+406 : not acceptable
+415 : unsupported media types
+429 : too many requests
+
+abort(code)  will show default page for error code
+
+
+

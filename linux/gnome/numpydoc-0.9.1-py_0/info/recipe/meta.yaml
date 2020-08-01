@@ -1,0 +1,42 @@
+chema.xml.h:109
+msgid ""
+"Normally you can access the menubar with F10. This can also be customized "
+"via gtkrc (gtk-menu-bar-accel = \"whatever\"). This option allows the "
+"standard menubar accelerator to be disabled."
+msgstr ""
+"Normally you can access the menubar with F10. This can also be customised "
+"via gtkrc (gtk-menu-bar-accel = \"whatever\"). This option allows the "
+"standard menubar accelerator to be disabled."
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:110
+msgid "Whether the shell integration is enabled"
+msgstr "Whether the shell integration is enabled"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:111
+msgid "Whether to ask for confirmation before closing a terminal"
+msgstr "Whether to ask for confirmation before closing a terminal"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:112
+msgid "Whether to show the menubar in new windows"
+msgstr "Whether to show the menubar in new windows"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:113
+msgid "Whether to open new terminals as windows or tabs"
+msgstr "Whether to open new terminals as windows or tabs"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:114
+msgid "When to show the tabs bar"
+msgstr "When to show the tabs bar"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:115
+msgid "The position of the tab bar"
+msgstr "The position of the tab bar"
+
+#: ../src/org.gnome.Terminal.gschema.xml.h:116
+msgid "Which theme variant to use"
+msgstr "Which theme variant to use"
+
+#. Open new terminal in new window
+#: ../src/preferences.ui.h:2
+msgid "Window"
+msgstr "Window"

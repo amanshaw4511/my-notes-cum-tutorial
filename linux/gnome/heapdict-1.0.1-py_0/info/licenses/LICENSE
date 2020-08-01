@@ -1,0 +1,45 @@
+sync function(assetKey) {
+    const bin = await vAPI.storage.get(assetKey);
+    const content =
+        bin instanceof Object && typeof bin[assetKey] === 'string'
+            ? bin[assetKey]
+            : '';
+
+    // Remove obsolete entry
+    // TODO: remove once everybody is well beyond 1.18.6
+    vAPI.storage.remove('assets/user/filters.txt');
+
+    return { assetKey, content };
+};
+
+const saveUserAsset = function(assetKey, content) {
+    return vAPI.storage.set({ [assetKey]: content }).then(( ) => {
+        return { assetKey, content };
+    });
+};
+
+/******************************************************************************/
+
+api.get = async function(assetKey, options = {}) {
+    if ( assetKey === µBlock.userFiltersPath ) {
+        return readUserAsset(assetKey);
+    }
+
+    let assetDetails = {};
+
+    const reportBack = (content, url = '', err = undefined) => {
+        const details = { assetKey, content };
+        if ( err !== undefined ) {
+            details.error = assetDetails.lastError = err;
+        } else {
+            assetDetails.lastError = undefined;
+        }
+        if ( options.needSourceURL ) {
+            if (
+                url === '' &&
+                assetCacheRegistry instanceof Object &&
+                assetCacheRegistry[assetKey] instanceof Object
+            ) {
+                details.sourceURL = assetCacheRegistry[assetKey].remoteURL;
+            }
+            if ( reIsExternalPath.test(url) ) 

@@ -1,0 +1,14 @@
+10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+</g><g transform="translate(24,1127)"><defs>
+    <path d="M11 7h2v2h-2V7zm0 4h2v6h-2v-6zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" id="info_outline_24_a"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="info_outline_24_b" fill="#fff">
+      <use xlink:href="#info_outline_24_a"/>
+    </mask>
+    <g mask="url(#info_outline_24_b)" fill="#1a73e8">
+      <path d="M0 0h24v24H0z"/>
+    </g>
+  </g>
+</g><g transform="translate(54,1171)"><path fill="none" d="M3 4h18v16H3z"/>
+  <path fill="#1a73e8" d="M13.857 6c0-1.104-.896-2-2-2-1.105 0-2 .896-2 2s.895 2 2 2c1.104 0 2-.896 2-2zm0 12c0-1.104-.896-2-2-2-1.105 0-2 .896-2 2s.

@@ -1,0 +1,47 @@
+# streams
+ stdin(0)	keyboard
+ stdout(1)	shell
+ stderr(2)	shell
+
+ # redirection
+
+ cmd > file		send output of command to file
+ cmd >> file		append output of comma d to file
+ cmd 2> file		send error of command to file
+ cmd 2>> file 		append error of command to file
+ cmd &> file		send both stdout n stderr to file
+ cmd < file		takes input from file
+ cmd <> file		file is used for both stdin n stdout for command
+ cmd << file		here document
+
+ // pipe
+
+ cmd1 | cmd2		send the output of cmd1 as input of cmd2
+
+
+ //do not display error
+ cmd 2> /dev/null
+
+
+# here document
+$ cat > a.txt << xxx
+>first line 
+>second line
+>xxx
+$ cat a.txt
+first line
+second line
+
+// this can be use to write dynamically in script
+$ vim aa.sh
+cat > bb.txt <<xxx
+first line in bb.txt
+second line in bb.txt
+xxx
+:wq
+
+$ cat bb.txt
+first line in bb.txt
+second line in bb.txt
+
+

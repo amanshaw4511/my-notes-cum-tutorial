@@ -1,0 +1,37 @@
+
+** Multitasking is the process of executing multiple tasks at the same time.
+
+** Multitasking can be achieved by two ways -
+ 
+    1. Process ( MultiProcessing)                    2. Thread ( MultiThreading)
+ * each process has separate address space memory   * threads share same address space of the given process it running
+ * it is heavy weight                               * it is light weight
+ * cost of communication is high                    * cost of communication is low
+ * switching between process is slow                * fast 
+
+
+
+# Life Cycle of a Thread
+    
+    NEW
+     |
+start()
+     |
+   RUNNABLE - _
+     |          - _   sleep() done, i/o complete
+     |              - lock available, resume()
+     |                notify(), notifyAll()  - _
+     |                                           _
+     |                                             -
+     |                                               NOT RUNNABLE
+     |                                             _
+     |                 sleep(), block on i/o      _
+     |               _ wait for lock, suspend() -
+     |           _ -   wait()
+     |       _ -
+   RUNNING - 
+     |
+run() exits
+stop()
+     |
+  TERMINATED

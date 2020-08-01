@@ -1,0 +1,20 @@
+a static class created inside a class
+    1. it can only access the static data and method of outer class including private
+    2. inner class can be instanciated without instanciating the outer class
+
+
+
+class Outer{
+    static int data = 30;
+
+    static Inner{
+        void msg(){
+            System.out.println("in inner class data = " + 30);
+        }
+    }
+
+    public static void main(String[] argv){
+        Outer.Inner inn = new Outer.Inner();
+        inn.msg();
+    }
+}

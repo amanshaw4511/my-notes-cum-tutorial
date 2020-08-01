@@ -1,0 +1,36 @@
+A anonymous inner class which have no name.
+It is used if we have to override method of a Class or Interface
+It is of two types
+    1. Class ( abstract or concrete )
+    2. Interface
+
+
+// Class 
+interface Person(){
+    void eat();
+}
+
+OR
+
+abstract Person(){
+    void eat();
+}
+
+public Test{
+public static void main(String[] argv){
+    Person man = new Person(){
+        void eat(){
+            System.out.println("eating fast");
+        }
+    };
+
+    Person woman = new Person(){
+        void eat(){
+            System.out.println("eating slow");
+        }
+    };
+
+    man.eat();          // output : eating fast
+    woman.eat();        // output : eating slow
+}
+}

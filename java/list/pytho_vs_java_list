@@ -1,0 +1,9 @@
+
+python                  java
+
+s = l[i]               l.get(i)
+l[i] = s               l.set(i,s)
+
+l.append(s)            l.add(s)
+l.
+

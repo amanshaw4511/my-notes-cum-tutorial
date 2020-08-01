@@ -1,0 +1,24 @@
+A class inside the method of another class
+
+
+Class Outer{
+    private int date = 30;
+    
+    void message(){
+    Class Msg{
+        void print(){
+            System.out.println("inner class message");
+        }
+    }
+
+    Msg msg = new Msg();
+    msg.print();
+
+    }
+
+    public static void main(String[] argv){
+        Outer outt = new Outer();
+        outt.message();         // output : inner class message
+    }
+}
+

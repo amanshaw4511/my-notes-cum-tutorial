@@ -1,0 +1,9 @@
+// java platform independent
+
+1. we write source code code.java
+2. then the code.java is compiled with compiler 'javac'
+3. it is converted to byte code 'code.class'
+4. the byte code is platform independet code
+5. the byte code code.class can be run into any platform with help JVM tool 'java' 
+6. then the code.class is converted to executable code for respective platform which is platform dependent
+

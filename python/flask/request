@@ -1,0 +1,21 @@
+form        -- dictionary object of post req data
+args        -- parsed values from url get req
+cookies     -- dictionary containing cookies
+files       -- data related to uploaded file
+method      -- it is the current req method (get or post)
+
+
+
+## get and post method ##
+@app.route('/home',methods=['GET','POST']
+def home():
+    if request.method == 'GET':
+        name = request.args.get('uname')
+        pass = request.args.get('pass')
+        return 'get method'
+    else :
+        name = request.form['uname']
+        pass = request.form['upass']
+        return 'post method'
+
+

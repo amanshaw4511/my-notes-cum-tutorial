@@ -1,0 +1,27 @@
+
+## cookies ##
+
+request.cookies.get(<title>)
+response.setCookie(<title>,<content>,<expiry time>)
+
+@app.route('/cookie')
+def cookie():
+    res = make_response('<h1>cookie is set</h1>)
+    res.set_cookie('id','101')
+    return res
+
+@app.route('/login', methods=['POST'])
+def login():
+    if request.method == 'POST':
+        email = request.form['email']
+        pass = request.form['password']
+        if pass = "mypassword":
+            resp = make_response(render_template('success.html'))
+            resp.set_cookie('email',email)
+            return resp
+    else :
+        return redirect(url_for('error'))
+
+
+
+

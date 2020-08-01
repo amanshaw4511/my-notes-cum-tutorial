@@ -1,0 +1,37 @@
+// loading of data
+                |_____ static data
+                |_____ non static data
+
+
+1. static loading phase :
+        static variable - store in memory with default value
+        static block    - jvm store heading in memory
+        static method   - jvm store heading in memory
+
+2. static initialization phase :
+        static variable - executed
+        static block    - executed
+        static method   - not executed
+
+3. main method is executed :
+       in which we create a object
+       during object creation step 4, 5 and 6 is done.
+
+4. non static loading phase :
+        non static variable - store in memory with default value
+        non static block    - jvm store heading in memory
+        non static method   - jvm store heading in memory
+        constructor         - jvm store heading in memory
+
+5. non static initialization phase :
+        non static variable - executed
+        non static block    - executed
+        non static method   - not executed
+        constructor         - not executed
+
+3.  control goes to "constructor" :
+        after execution of constructor
+        it is to be said that object is loaded and initialized.
+
+NOTE : jvm gives memory for static data
+        but for non static data programmer have to request jvm for memory by object creation

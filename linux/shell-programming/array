@@ -1,0 +1,59 @@
+## defining array
+	arr[0]='one'
+	arr[1]='two'
+	arr[2]='three'
+or
+	set -A arr one two three
+or
+	arr=(one two three)
+
+
+## accessing array
+	${arr[0]}
+	${arr[1]}
+
+## access all elements
+	${arr[*]}	# IFS separated
+	${arr[@]}	# space separated
+
+## array length
+	${#arr[*]}
+
+## array indexes
+	${!arr[*]}
+
+## length of N th element in array
+	${#arr[n]}
+
+## slice elements
+	${arr[*]:m:n}
+	#	m = offset
+	#	n = no. of elements after offset
+
+## slice for a perticuler element in array
+	${arr[i]:m:n}
+	substring of i th element
+
+## replace element
+	${arr[*]/'one'/'ONE'}
+
+## append element
+	arr=("${arr[*]}" "four" "five")
+
+## remove element
+	unset arr[i]
+
+## find and remove by pattern
+	${arr[*]/on*/}
+
+## copy 
+	arr2=("${arr[@]})
+
+## load content from file
+	arr=(`cat file`)
+
+
+
+## input array
+
+	read -a arr

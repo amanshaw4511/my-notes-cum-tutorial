@@ -1,0 +1,11 @@
+commit cd5e0c13d2ac833947f1d5e0d0e3b28084cbf068
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 29 15:36:11 2019 +0000
+
+    Re-render the feedstock after CI registration.
+
+commit 114dcbf9d35edecae8fb639aa7ccf881a6196064
+Author: Travis-CI on github.com/conda-forge/staged-recipes <conda-forge@googlegroups.com>
+Date:   Fri Mar 29 15:23:07 2019 +0000
+
+    Initial feedstock commit with conda-smithy 3.3.2.

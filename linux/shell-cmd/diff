@@ -1,0 +1,41 @@
+$ cat > a.txt
+apple
+mango
+banana
+
+$ cat > b.txt
+apple
+mango
+
+$ cat > c.txt
+apple
+mango
+guava
+
+$ diff a.txt b.txt
+3d2			# line 3 deleted
+< banana
+
+$ diff a.txt c.txt
+3c3			# line 3 changed
+< banana
+---
+> guava
+
+$ diff b.txt c.txt
+2a3			# line 3 added
+> guava
+
+# < shows extra data of first file
+# > shows extra data of second file
+
+a : added
+d : deleted
+c : changed
+
+###
+
+diff -i	f1 f2	# ignore cases
+diff -w f1 f2	# ignore white spces
+
+###  

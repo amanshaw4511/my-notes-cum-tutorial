@@ -1,0 +1,71 @@
+e " $dlprefiles $dlfiles " in
+	*" $lib "*) ;;
+	*) func_append dlfiles " $lib" ;;
+	esac
+      done
+
+      # Make sure dlprefiles contains only unique files
+      old_dlprefiles=$dlprefiles
+      dlprefiles=
+      for lib in $old_dlprefiles; do
+	case "$dlprefiles " in
+	*" $lib "*) ;;
+	*) func_append dlprefiles " $lib" ;;
+	esac
+      done
+
+      if test yes = "$build_libtool_libs"; then
+	if test -n "$rpath"; then
+	  case $host in
+	  *-*-cygwin* | *-*-mingw* | *-*-pw32* | *-*-os2* | *-*-beos* | *-cegcc* | *-*-haiku*)
+	    # these systems don't actually have a c library (as such)!
+	    ;;
+	  *-*-rhapsody* | *-*-darwin1.[012])
+	    # Rhapsody C library is in the System framework
+	    func_append deplibs " System.ltframework"
+	    ;;
+	  *-*-netbsd*)
+	    # Don't link with libc until the a.out ld.so is fixed.
+	    ;;
+	  *-*-openbsd* | *-*-freebsd* | *-*-dragonfly*)
+	    # Do not include libc due to us having libc/libc_r.
+	    ;;
+	  *-*-sco3.2v5* | *-*-sco5v6*)
+	    # Causes problems with __ctype
+	    ;;
+	  *-*-sysv4.2uw2* | *-*-sysv5* | *-*-unixware* | *-*-OpenUNIX*)
+	    # Compiler inserts libc in the correct place for threads to work
+	    ;;
+	  *)
+	    # Add libc to deplibs on all other systems if necessary.
+	    if test yes = "$build_libtool_need_lc"; then
+	      func_append deplibs " -lc"
+	    fi
+	    ;;
+	  esac
+	fi
+
+	# Transform deplibs into only deplibs that can be linked in shared.
+	name_save=$name
+	libname_save=$libname
+	release_save=$release
+	versuffix_save=$versuffix
+	major_save=$major
+	# I'm not sure if I'm treating the release correctly.  I think
+	# release should show up in the -l (ie -lgmp5) so we don't want to
+	# add it in twice.  Is that correct?
+	release=
+	versuffix=
+	major=
+	newdeplibs=
+	droppeddeps=no
+	case $deplibs_check_method in
+	pass_all)
+	  # Don't check for shared/static.  Everything works.
+	  # This might be a little naive.  We might want to check
+	  # whether the library exists or not.  But this is on
+	  # osf3 & osf4 and I'm not really sure... Just
+	  # implementing what was already the behavior.
+	  newdeplibs=$deplibs
+	  ;;
+	te

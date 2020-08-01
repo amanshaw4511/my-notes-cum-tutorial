@@ -1,0 +1,21 @@
+{
+  "jpeg": "9",
+  "zlib": "1.2",
+  "gstreamer": "1.14",
+  "cxx_compiler_version": "7.3.0",
+  "fontconfig": "2.13",
+  "libpng": "1.6",
+  "c_compiler": "gcc",
+  "dbus": "1",
+  "gst_plugins_base": "1.14",
+  "sqlite": "3",
+  "libxml2": "2.9",
+  "freetype": "2.9",
+  "glib": "2.56",
+  "qtwebkit": "true",
+  "cxx_compiler": "gxx",
+  "icu": "58",
+  "openssl": "1.1.1",
+  "c_compiler_version": "7.3.0",
+  "expat": "2.2"
+}

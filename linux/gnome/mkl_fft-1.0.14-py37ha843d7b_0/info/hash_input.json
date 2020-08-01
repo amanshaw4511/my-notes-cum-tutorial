@@ -1,0 +1,8 @@
+{
+  "cxx_compiler_version": "7.3.0",
+  "numpy": "1.11",
+  "c_compiler": "gcc",
+  "c_compiler_version": "7.3.0",
+  "mkl": "2019",
+  "cxx_compiler": "gxx"
+}

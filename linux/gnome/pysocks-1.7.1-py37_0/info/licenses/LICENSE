@@ -1,0 +1,50 @@
+c_options_finish [ARG]...
+# ----------------------------
+# Finishing the option parse loop (call 'func_options' hooks ATM).
+func_options_finish ()
+{
+    $debug_cmd
+
+    func_run_hooks func_options ${1+"$@"}
+    func_propagate_result func_run_hooks func_options_finish
+}
+
+
+# func_options [ARG]...
+# ---------------------
+# All the functions called inside func_options are hookable. See the
+# individual implementations for details.
+func_hookable func_options
+func_options ()
+{
+    $debug_cmd
+
+    _G_options_quoted=false
+
+    for my_func in options_prep parse_options validate_options options_finish
+    do
+      func_unset func_${my_func}_result
+      func_unset func_run_hooks_result
+      eval func_$my_func '${1+"$@"}'
+      func_propagate_result func_$my_func func_options
+      if $func_propagate_result_result; then
+        eval set dummy "$func_options_result"; shift
+        _G_options_quoted=:
+      fi
+    done
+
+    $_G_options_quoted || {
+      # As we (func_options) are top-level options-parser function and
+      # nobody quoted "$@" for us yet, we need to do it explicitly for
+      # caller.
+      func_quote eval ${1+"$@"}
+      func_options_result=$func_quote_result
+    }
+}
+
+
+# func_options_prep [ARG]...
+# --------------------------
+# All initialisations required before starting the option parse loop.
+# Note that when calling hook functions, we pass through the list of
+# positio

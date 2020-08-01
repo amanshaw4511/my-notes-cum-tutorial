@@ -1,0 +1,11 @@
+{
+  "arch": "x86_64",
+  "build": "hc07d326_0",
+  "build_number": 0,
+  "depends": [],
+  "name": "ripgrep",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1538175793905,
+  "version": "0.10.0"
+}

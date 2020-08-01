@@ -1,0 +1,3 @@
+not have permission to move these items from their current folders. Add items to {START_SPAN_2}{NAME}{END_SPAN} instead.}}"),{NUM_ITEMS:c,START_SPAN_1:'<span class="'+V("drive-organize-dialog-parent-name")+'">',NAME:Y(b),
+END_SPAN:"</span>",START_SPAN_2:'<span class="'+V("drive-organize-dialog-parent-name")+'">'}),a+=b);return U(a+"</span>")};function wFg(a,b,c,d){sO.call(this,"drive-organize-dialog",void 0,d);this.O=a;this.R=b;this.J=c;this.F=this.D=null;this.H=!1}x(wFg,sO);w=wFg.prototype;w.oa=function(){sO.prototype.oa.call(this);HO(this,VD(VD(new UD,XD,!1,!0),WD,!0));this.Ef(!0);$P(this.gb(),sFg)};
+w.za=function(){sO.prototype.za.call(this);MO(this,"ok");var a=this.ce;eM(a,"ok",!1);a=Jac(a);for(var b=0;b<a.length;b++)

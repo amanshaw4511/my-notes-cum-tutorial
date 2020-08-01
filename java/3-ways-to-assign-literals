@@ -1,0 +1,28 @@
+// ways of assingment
+1. direct assignment
+     int a = 4 ;
+
+2. by another variable
+     int b = a ;
+
+3. by expression
+     int c = 1 + 4 ;
+
+4. by method call
+     int d = m() ;
+
+5. by parameter assigment
+     public void add ( int a, int b ){
+        sop( a + b);
+        }
+
+
+// internal functionality of compiler during assignment
+
+1. casting :
+    |__ 
+        compiler check the data type of destination and value range of data it can store
+        if source data lies in range (and compatible type) of destinnation data type range then compiler successfully assign value
+        if it is out of range then it gives compile time error
+
+

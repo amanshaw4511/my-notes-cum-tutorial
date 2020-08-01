@@ -1,0 +1,18 @@
+{
+  "arch": "x86_64",
+  "build": "py37h7725739_2",
+  "build_number": 2,
+  "depends": [
+    "libgcc-ng >=7.3.0",
+    "liblief 0.9.0 h7725739_2",
+    "libstdcxx-ng >=7.3.0",
+    "python >=3.7,<3.8.0a0"
+  ],
+  "license": "Apache 2.0",
+  "license_family": "Apache",
+  "name": "py-lief",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1547593382791,
+  "version": "0.9.0"
+}

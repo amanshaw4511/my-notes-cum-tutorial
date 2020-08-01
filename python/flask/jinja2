@@ -1,0 +1,28 @@
+{% ... %}                   statement
+{{ ... }}                   expression to print 
+{# ... #}                   comments not include in template output
+# ... ##                    line comment
+
+..........................................................
+<h2> hello {{ name }} </h2>
+<ul>
+{% for i in range(1,10) %}
+    <li> {{ i }} </li>
+{% endfor %}
+</ul>
+
+
+@app.route('/')
+def home():
+    return render_template('home.html',name="Aman")
+.............................................................
+
+## adding static files
+
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+..............................................................
+
+
+
+
+

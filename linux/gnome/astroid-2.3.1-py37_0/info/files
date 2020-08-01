@@ -1,0 +1,286 @@
+ssjav.com^$ghide
+kissjav.com###player-advertising
+
+! https://github.com/uBlockOrigin/uAssets/issues/2686
+@@||gala100.net^$ghide
+galaxy.gala100.net##.metaRedirectWrapperTopAds
+
+! https://github.com/uBlockOrigin/uAssets/issues/2687
+@@||maps4heroes.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2666
+||netdna-ssl.com^$frame,domain=telerium.tv
+*$popup,domain=rojadirectaonlinetv.com,3p
+*$popup,domain=extremotvplay.com,3p
+peer2cast.pro###ads
+/skipad.png$image
+
+! https://github.com/uBlockOrigin/uAssets/issues/2693
+@@||hackerbot.net^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2690
+@@||maritimeherald.com^$ghide
+maritimeherald.com##[href*="/lnk.asp"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/2691
+@@||deadtoonsindia.*^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2694
+ihackedgames.com##+js(aopr, decodeURIComponent)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8tu65p/bomurl_link_shortener_adblock_detection/
+bomurl.com##+js(aeld, load, 2000)
+bomurl.com##+js(nano-sib)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2696
+yxzero.xyz##+js(aopr, adBlockDetected)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8tv52a/onlinevideoconvertercom_adblock_warning_message
+@@||onlinevideoconverter.com^$ghide
+||onlinevideoconverter.com^$script,1p
+onlinevideoconverter.com##[href="https://bit.ly/uconvert"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/2697
+elsfile.org##+js(aeld, load, nextFunction)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2698
+@@||xavierstuder.com^$ghide
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8u8s64
+digi-tv.ch##+js(nostif, test.offsetHeight, 100)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2702
+! sites with the same issue and fix
+123tvseries.co##+js(set, atob, noopFunc)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2706
+pnd.tl##+js(aopr, app_vars.force_disable_adblock)
+pnd.tl##+js(aopr, AaDetector)
+pnd.tl##+js(aopw, Fingerprint2)
+pnd.tl##A[href$=".html"][rel="nofollow norefferer noopener"]
+
+! https://github.com/uBlockOrigin/uAssets/issues/2707
+@@||micinehd.com^$ghide
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/957
+@@||wizblogger.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2709
+! https://github.com/uBlockOrigin/uAssets/issues/5750
+freebitcoin.win##+js(set, CaptchmeState.adb, undefined)
+@@||freebitcoin.win^$ghide
+@@||cdnjs.cloudflare.com/ajax/libs/blockadblock/*/blockadblock.js$script,domain=freebitcoin.win
+! https://github.com/uBlockOrigin/uAssets/issues/2709#issuecomment-401538448
+e-monsite.com##+js(set, CaptchmeState.adb, undefined)
+! https://github.com/uBlockOrigin/uAssets/issues/2709#issuecomment-402537225
+coindice.win##+js(set, CaptchmeState.adb, undefined)
+coindice.win##+js(aopr, adBlockDetected)
+@@||coindice.win^$ghide
+! https://github.com/uBlockOrigin/uAssets/issues/2709#issuecomment-405121078
+yannik.biz##+js(set, CaptchmeState.adb, undefined)
+||yannik.biz/js/ads.js$script,1p,redirect=fuckadblock.js-3.2.0
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/117#issuecomment-401351982
+planet-explorers-isos.com##+js(set, adblock, false)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2711
+plusone8.com##+js(aopr, ExoLoader.serve)
+plusone8.com###overlay-advertising
+
+! https://github.com/uBlockOrigin/uAssets/issues/2712
+camvideos.tv##+js(acis, atob, tabunder)
+camvideos.tv##+js(acis, parseInt, tabunder)
+camvideos.tv##.thumbs-items
+
+! https://github.com/uBlockOrigin/uAssets/issues/2715
+lanjutkeun.*##+js(aeld, load, 2000)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2713
+xrares.com##+js(acis, decodeURI, decodeURIComponent)
+xrares.com##+js(disable-newtab-links.js)
+xrares.com###aclose
+xrares.com##.nvheader
+||xrares.com/sw.js$script,1p
+
+! https://github.com/jspenguin2017/uBlockProtector/issues/958
+||shidurlive.com/adz*.html$frame
+||tvbarata.club/ads/*$frame
+
+! https://github.com/uBlockOrigin/uAssets/issues/2717
+filmix.co##+js(acis, String.fromCharCode, /\/\*[0-9a-f]{40}\*\//)
+@@||filmix.co^$ghide
+||googleads.g.doubleclick.net/pagead/$xhr,redirect=nooptext,domain=filmix.co
+||protovid.com/preroll/$media,redirect=noopmp3-0.1s,domain=filmix.co
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=41116
+! https://github.com/uBlockOrigin/uAssets/issues/4153
+solarmoviex.to##+js(acis, decodeURI, atob)
+solarmoviex.to##+js(acis, Math, zfgloaded)
+||solarmoviex.to/sw.js$script
+
+! https://github.com/uBlockOrigin/uAssets/issues/2722
+adfloz.com##+js(aopr, app_vars.force_disable_adblock)
+adfloz.com##+js(nano-sib)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2724
+solo-link.*##+js(aopr, app_vars.force_disable_adblock)
+solo-link.*##+js(nostif, nextFunction, 250)
+solo-link.*###headlineatas
+
+! https://github.com/uBlockOrigin/uAssets/issues/2727
+! https://github.com/uBlockOrigin/uAssets/issues/2838
+darksoftware.net##+js(set, hope, true)
+@@||forum.darksoftware.net^$ghide
+forum.darksoftware.net##.errorDetails
+
+! https://github.com/uBlockOrigin/uAssets/issues/2728
+@@||pesupdate.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2729
+aliancapes.*##+js(nostif, nextFunction, 2000)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2730
+@@||moddingtr.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2731
+@@||wcvb.com^$ghide
+wcvb.com##.ad-label
+wcvb.com##.ad-leaderboard
+
+! https://forums.lanik.us/viewtopic.php?p=138401#p138401
+rarbgmirror.*##+js(aeld, mousedown, preventDefault)
+rarbgmirror.*##+js(window.open-defuser)
+##a[href*="?bver="]
+
+! https://github.com/uBlockOrigin/uAssets/issues/2735
+skylinewebcams.com##+js(nostif, change(), 14000)
+@@||skylinewebcams.com^$xhr,1p
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$script,important,domain=skylinewebcams.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/2736
+kanald.com.tr##+js(set, adBlockDisabled, true)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2738
+@@||topzone.lt^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2740
+@@||wallpaper-house.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2744
+@@||so-abnehmen.info^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2746
+@@||k-gen.fr^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/1660#issuecomment-401872283
+@@||mediaset.es^$ghide
+@@||yasss.es^$ghide
+@@||mdsrwdassets-a.akamaihd.net^$script,xhr,domain=mediaset.es|yasss.es
+
+! https://github.com/uBlockOrigin/uAssets/issues/2748
+radiotormentamx.com,televall.website##+js(aeld, load, onload)
+@@||televall.website^$ghide
+@@*.jpg#$image,domain=televall.website
+@@*.gif#$image,domain=televall.website
+
+@@||gstatic.com/recaptcha/*$css
+
+! https://github.com/uBlockOrigin/uAssets/issues/2760
+googledrivelinks.com##+js(set, canRunAds, true)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2761
+@@||a2zp30.com^$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/324
+! https://github.com/uBlockOrigin/uAssets/issues/2762
+! https://github.com/uBlockOrigin/uAssets/issues/2763
+! https://github.com/uBlockOrigin/uAssets/commit/6732af10e9174c868938d10e944a8bd4cb2a50ca#commitcomment-29589001
+*/rellect/AdblockDetector/handler.min.js$script,important,redirect=noopjs
+
+! https://github.com/uBlockOrigin/uAssets/issues/2766
+@@||wmur.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/4734
+torrentz2eu.*##+js(aopr, glxopen)
+torrentz2eu.*##+js(aopw, _pop)
+torrentz2eu.*##+js(acis, decodeURI, decodeURIComponent)
+torrentz2eu.*##+js(acis, $, open)
+||ockoken.site^$3p
+
+! https://github.com/uBlockOrigin/uAssets/issues/2770
+@@||sport-tv-guide.live^$ghide
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*$script,domain=sport-tv-guide.live
+
+! https://github.com/uBlockOrigin/uAssets/issues/2771
+! https://github.com/NanoMeow/QuickReports/issues/1691
+hightech.web.id##+js(acis, document.createElement, onerror)
+hightech.web.id##+js(nano-sib.js)
+@@||hightech.web.id^$ghide
+hightech.web.id##.adsbygoogle
+hightech.web.id##.wait
+||hunkersummit.com^$3p
+
+! https://github.com/uBlockOrigin/uAssets/issues/2773
+acienciasgalilei.com##+js(aeld, load, adverts-top-container)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2774
+22pixx.xyz##+js(aopr, ExoLoader.addZone)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2778
+@@||imaginetricks.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2785
+@@||mangadeep.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2786
+@@||mp3skull-tube.net/js/ads.js$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/2787
+smsget.net##+js(nostif, Adblock, 5000)
+smsget.net##+js(nostif, disable, 200)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2788
+temp-mails.com##+js(acis, document.getElementById, AdBlock)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2791
+zigforums.com##+js(aopw, adsBlocked)
+@@||zigforums.com/js/*$xhr,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/2793
+damelibros.com##+js(set, adBlockDetected, noopFunc)
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8whmpf/any_idea_how_bypass_this_block_detection/
+kjanime.net##+js(nostif, CekAab, 0)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2797
+novaenreta.space##+js(window.open-defuser)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2801
+soft112.com##+js(nano-sib)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2800
+popmatters.com##+js(aopr, CatapultTools)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2804
+@@||dream-sound.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/2803
+@@||facepunch.io^$script,1p
+@@||biters.io^$script,1p
+@@||skyroyale.io^$script,1p
+@@||fisp.io^$script,1p
+@@||facepunch.io^$ghide
+@@||biters.io^$ghide
+@@||skyroyale.io^$ghide
+@@||fisp.io^$ghide
+@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=facepunch.io|biters.io|skyroyale.io|fisp.io
+
+! https://forums.lanik.us/viewtopic.php?f=62&t=41168
+4realtorrentz.com##+js(aopw, Fingerprint2)
+
+! https://github.com/uBlockOrigin/uAssets/issues/2806
+goto.com.np##+js(aopr, app_vars.force_disable_adblock)
+goto.com.np##+js(aopr, open)
+*$frame,3p,domain=goto.com.np
+
+! https://www.reddit.com/r/uBlockOrigin/comments/8xhann/get

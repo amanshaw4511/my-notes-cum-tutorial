@@ -1,0 +1,126 @@
+ues/1328
+@@||kepobio.com^$ghide
+kepobio.com##.adsbygoogle
+
+! https://github.com/uBlockOrigin/uAssets/issues/5733
+@@||argentina2019.com^$ghide
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=argentina2019.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/5734
+iloadit10.live##+js(aopr, app_vars.force_disable_adblock)
+@@||iloadit10.live^$ghide
+||iloadit10.live/sw$script,1p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5736
+taradad5.com##+js(aopr, app_vars.force_disable_adblock)
+
+||parferonorse.info^$3p
+
+! https://github.com/NanoMeow/QuickReports/issues/1331
+youtube-mp3.my##+js(set, canAds, true)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5741
+anime2001.com##+js(acis, Math, zfgloaded)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5744
+etkisizeleman.com##+js(nostif, nextFunction, 250)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5745
+@@||ddlflix.com^$ghide
+ddlplayer.com##+js(acis, Math, zfgloaded)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5746
+jwearn.com##+js(aopr, app_vars.force_disable_adblock)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5747
+karimunbits.net##+js(aopw, adBlockDetected)
+@@||mtofficial.com^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/5748
+claimcoins.cc##+js(std, bait)
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$script,domain=claimcoins.cc
+
+! https://github.com/uBlockOrigin/uAssets/issues/5749
+@@||claimbtc.in^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/5753
+topbtc.club##+js(aopw, adBlockDetected)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5755
+@@||crypto-fun.cf/btc/libs/advertisement.js$script,1p
+@@||crypto-fun.cf^$ghide
+
+! https://github.com/uBlockOrigin/uAssets/issues/5758
+@@||converter-btc.world/libs/advertisement.js$script,1p
+@@||converter-btc.world^$ghide
+
+! https://github.com/NanoMeow/QuickReports/issues/1336
+varmatin.com##+js(aopw, checkAds)
+
+! https://github.com/NanoMeow/QuickReports/issues/1337
+@@||siouxcityjournal.com^$ghide
+siouxcityjournal.com##.tnt-ads-container
+
+||popruexo.com^$3p
+||wicket.pw/embeds/icc-cwc.png$image
+
+! https://github.com/uBlockOrigin/uAssets/issues/5761
+switch-xci.com##+js(aopr, googletag)
+switch-xci.com##+js(aopr, anOptions)
+switch-xci.com##+js(acis, Math, zfgloaded)
+
+! filesharing.io anti adb
+filesharing.io##+js(aopw, showMsgAb)
+@@||filesharing.io^$ghide
+
+! https://github.com/NanoMeow/QuickReports/issues/1340
+@@||loveawake.com^$ghide
+loveawake.com##.adsbygoogle
+
+! https://github.com/uBlockOrigin/uAssets/issues/5767
+softwarecrackguru.com##+js(aopw, downloadJSAtOnload)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5770
+@@||kickedface.com^$ghide
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/351
+mega-debrid.eu##+js(set, Advertisement, 1)
+
+! https://github.com/NanoMeow/QuickReports/issues/1348
+! https://github.com/NanoMeow/QuickReports/issues/1350
+@@||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$xhr,domain=liskfaucet.info|litecoinfaucet.info
+
+! https://github.com/uBlockOrigin/uAssets/issues/5772
+projetomotog.blogspot.com##+js(aeld, load, 2000)
+
+! https://github.com/NanoAdblocker/NanoFilters/issues/350
+||pagead2.googlesyndication.com/pagead/$script,redirect=noopjs,domain=solvetube.site,important
+||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js,important,domain=solvetube.site
+@@*$script,domain=solvetube.site
+
+! https://github.com/uBlockOrigin/uAssets/issues/5775
+justupload.io##+js(acis, document.createElement, script)
+justupload.io##+js(acis, Math, zfgloaded)
+||beharmalted.info^
+
+! https://github.com/uBlockOrigin/uAssets/issues/5776
+mlwbd.*##+js(acis, Math, zfgloaded)
+||mlwbd.*/sw.js
+mlwbd.*###floating_ads_bottom_textcss_container
+
+! https://github.com/uBlockOrigin/uAssets/issues/5779
+123mkv.*##+js(window.open-defuser)
+||trislee.xyz^
+||apies.org^$3p
+
+! https://github.com/uBlockOrigin/uAssets/issues/5780
+bestfitnesstips.club##+js(aeld, load, onload)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5781
+videoz.*##+js(acis, Math, zfgloaded)
+
+! https://github.com/uBlockOrigin/uAssets/issues/5782
+rapidstream.co##+js(set, cRAds, true)
+rapidstream.co##+js(acis, Math, zfgloaded)
+
+! https://github.com/NanoMeow/QuickReports/iss

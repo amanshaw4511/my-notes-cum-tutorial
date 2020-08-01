@@ -1,0 +1,63 @@
+| $SED "$lo2o" | $NL2SP`
+      fi
+
+      func_generate_dlsyms "$outputname" "@PROGRAM@" false
+
+      # template prelinking step
+      if test -n "$prelink_cmds"; then
+	func_execute_cmds "$prelink_cmds" 'exit $?'
+      fi
+
+      wrappers_required=:
+      case $host in
+      *cegcc* | *mingw32ce*)
+        # Disable wrappers for cegcc and mingw32ce hosts, we are cross compiling anyway.
+        wrappers_required=false
+        ;;
+      *cygwin* | *mingw* )
+        test yes = "$build_libtool_libs" || wrappers_required=false
+        ;;
+      *)
+        if test no = "$need_relink" || test yes != "$build_libtool_libs"; then
+          wrappers_required=false
+        fi
+        ;;
+      esac
+      $wrappers_required || {
+	# Replace the output file specification.
+	compile_command=`$ECHO "$compile_command" | $SED 's%@OUTPUT@%'"$output"'%g'`
+	link_command=$compile_command$compile_rpath
+
+	# We have no uninstalled library dependencies, so finalize right now.
+	exit_status=0
+	func_show_eval "$link_command" 'exit_status=$?'
+
+	if test -n "$postlink_cmds"; then
+	  func_to_tool_file "$output"
+	  postlink_cmds=`func_echo_all "$postlink_cmds" | $SED -e 's%@OUTPUT@%'"$output"'%g' -e 's%@TOOL_OUTPUT@%'"$func_to_tool_file_result"'%g'`
+	  func_execute_cmds "$postlink_cmds" 'exit $?'
+	fi
+
+	# Delete the generated files.
+	if test -f "$output_objdir/${outputname}S.$objext"; then
+	  func_show_eval '$RM "$output_objdir/${outputname}S.$objext"'
+	fi
+
+	exit $exit_status
+      }
+
+      if test -n "$compile_shlibpath$finalize_shlibpath"; then
+	compile_command="$shlibpath_var=\"$compile_shlibpath$finalize_shlibpath\$$shlibpath_var\" $compile_command"
+      fi
+      if test -n "$finalize_shlibpath"; then
+	finalize_command="$shlibpath_var=\"$finalize_shlibpath\$$shlibpath_var\" $finalize_command"
+      fi
+
+      compile_var=
+      finalize_var=
+      if test -n "$runpath_var"; then
+	if test -n "$perm_rpath"; then
+	  # We should set the runpath_var.
+	  rpath=
+	  for dir in $perm_rpath; do
+	    func_append 

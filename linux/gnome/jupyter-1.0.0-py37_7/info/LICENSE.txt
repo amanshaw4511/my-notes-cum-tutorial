@@ -1,0 +1,46 @@
+s*$//;
+			if ($frag !~ /(?:{|;)/) {
+#print "skip<$line_nr_next>\n";
+				$suppress_statement = $line_nr_next;
+			}
+
+			# Find the real next line.
+			$realline_next = $line_nr_next;
+			if (defined $realline_next &&
+			    (!defined $lines[$realline_next - 1] ||
+			     substr($lines[$realline_next - 1], $off_next) =~ /^\s*$/)) {
+				$realline_next++;
+			}
+
+			my $s = $stat;
+			$s =~ s/{.*$//s;
+
+			# Ignore goto labels.
+			if ($s =~ /$Ident:\*$/s) {
+
+			# Ignore functions being called
+			} elsif ($s =~ /^.\s*$Ident\s*\(/s) {
+
+			} elsif ($s =~ /^.\s*else\b/s) {
+
+			# declarations always start with types
+			} elsif ($prev_values eq 'E' && $s =~ /^.\s*(?:$Storage\s+)?(?:$Inline\s+)?(?:const\s+)?((?:\s*$Ident)+?)\b(?:\s+$Sparse)?\s*\**\s*(?:$Ident|\(\*[^\)]*\))(?:\s*$Modifier)?\s*(?:;|=|,|\()/s) {
+				my $type = $1;
+				$type =~ s/\s+/ /g;
+				possible($type, "A:" . $s);
+
+			# definitions in global scope can only start with types
+			} elsif ($s =~ /^.(?:$Storage\s+)?(?:$Inline\s+)?(?:const\s+)?($Ident)\b\s*(?!:)/s) {
+				possible($1, "B:" . $s);
+			}
+
+			# any (foo ... *) is a pointer cast, and foo is a type
+			while ($s =~ /\(($Ident)(?:\s+$Sparse)*[\s\*]+\s*\)/sg) {
+				possible($1, "C:" . $s);
+			}
+
+			# Check for any sort of function declaration.
+			# int foo(something bar, other baz);
+			# void (*store_gdt)(x86_descr_ptr *);
+			if ($prev_values eq 'E' && $s =~ /^(.(?:typedef\s*)?(?:(?:$Storage|$Inline)\s*)*\s*$Type\s*(?:\b$Ident|\(\*\s*$Ident\))\s*)\(/s) {
+	

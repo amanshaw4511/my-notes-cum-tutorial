@@ -1,0 +1,17 @@
+{
+  "paths": [
+    {
+      "_path": "lib/python3.7/site-packages/gmpy2-2.0.8-py3.7.egg-info",
+      "path_type": "hardlink",
+      "sha256": "16ea1710a2c9f865e8cef40ca007b2fbd1380230d9529adedb234cf4a5aa8026",
+      "size_in_bytes": 1018
+    },
+    {
+      "_path": "lib/python3.7/site-packages/gmpy2.cpython-37m-x86_64-linux-gnu.so",
+      "path_type": "hardlink",
+      "sha256": "b1d5654e956b2f46417d16b80327bb19a8ea31a5533ffb6780cb2988a2399a44",
+      "size_in_bytes": 551896
+    }
+  ],
+  "paths_version": 1
+}

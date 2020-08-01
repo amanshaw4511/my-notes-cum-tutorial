@@ -1,0 +1,43 @@
+## strings
+
+# strings assigng
+s="hello world"
+>>
+
+# print string
+echo "${s}"
+>> hello world
+
+# string length
+echo "${#s}"
+>> 11
+
+# string slicing (substring)
+## ${var:start_index:length}
+echo "${s:1:3}"
+>> ell
+## print last 2 char
+echo "${s:${#s}-2}"
+>> ld
+
+## ${var:start_index:-len_to_remove_char_from_last}
+echo "${s:0:-1}"
+>> hello worl
+echo "${s:1:-2}"
+>> ello wor
+
+
+### convert string to array
+# method 1 : using read command
+s="ab;cd;ef;fg"
+IFS=';' read -ra array <<< "${s}"
+echo ${array[*]}
+>> ab cd ef fg
+
+# metho 2 : using tr command
+array=($(echo ${s} | tr ';' ' '))
+echo ${array[*]}
+>> ab cd ef fg
+
+
+

@@ -1,0 +1,91 @@
+## chown
+// change ownership
+chown usr:grp <file>
+chown -R|--recursive usr:grp <dir>
+
+## chgrp
+// change grp ownership
+chgrp grp <file>
+
+## chmod
+// change mod or permission
+//rwx == 111 = 7
+//rw == 110 = 6
+
+chmod <XXX> file
+chmod u=rwx,g=rw,o=r <file>
+
+chmod g=u file
+// set grp permission equal to user
+
+## umask
+# ... new_file ... new_dir ... permission ...
+      666	   777		linux base permissions
+     -022         -022 		umask
+      644	   755		resulting permission
+ 
+// the linux base permission when file or dir created
+file : 666 || dir : 777
+// default umask value for debian dist
+umask 022
+// so default permission in debian is
+file : 644	|| dir : 755
+
+// basically the umask value is subtracted from linux base permission
+
+# special permission bit
+
+--SUIT  set userID : only owner user can execute the file
+--SGID  set grpID : only owner grp can executr the file
+--sticky bit      : only owner can delete the file. but other with permission can read/write
+
+chmod <XXXX> file
+
+// first octal X denote special permission (SGID,SUID,sticky_key)
+
+chmod psc<+-=>pmc
+// psc = perm set code
+// pmc = perm modify code
+
+// psc
+u : owner
+g : grp
+o : other or world
+a : all
+
+// pmc
+r : read
+w : write
+x : execute
+X : execute only if dir or have execute perm
+
+s : SUID or GUID
+t : sticky bit
+u : existing owner perm
+g : existing grp perm
+o : existing world perm
+
+
+## lsattr
+// list file attribute
+lsattr file
+
+## chattr
+// change file attr
+chattr <options> file
+
++ : add attr
+- : remove attr
+
+// options
+a append-only : disable write access, only can append
+i immutabe : cant delete, cant write, cant rename
+c compress : compress data after written, decomp.. after when reading
+s securr del: it first make the file data 0, then delete, so cant be recovered
+A no-access-time : linux wont update access time stamp
+
+so on...
+
+
+
+

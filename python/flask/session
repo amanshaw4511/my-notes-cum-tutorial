@@ -1,0 +1,25 @@
+* session concept is similer to cookies
+but " session data is stored in server "
+
+* a session can be defined for as the duration for which a user logs into the server and logs out.
+
+# add session 
+session[<variable name>] = <value>
+
+# remove session
+session.pop(<variable name>,none)
+
+ @app.route('/success',methods = ["POST"])  
+ def success():  
+     if request.method == "POST":  
+         session['email']=request.form['email']  
+     return render_template('success.html')  
+                  
+              @app.route('/logout')  
+ def logout():  
+     if 'email' in session:  
+         session.pop('email',None)  
+         return render_template('logout.html');  
+     else:  
+         return '<p>user already logged out</p>'  
+

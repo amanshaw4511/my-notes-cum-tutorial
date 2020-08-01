@@ -1,0 +1,48 @@
+olor" comment="界面内底下缘色"/>
+		<TV name="MenuInnerBorder" value="0xb4dbff" type="color" comment="菜单内框"/>
+		<TV name="MenuOuterBorder" value="0x4879b8" type="color" comment="菜单外框"/>
+		<TV name="MenuLeftBar" value="0xc6e1fc" type="color" comment="菜单左侧底色"/>
+		<TV name="EditDisableBackground" value="0xF0F0F0" type="color" comment="菜单左侧底色"/>
+	</TG>
+	<TG name="BorderColor">
+		<TV name="Normal" value="0xC3CFE2" type="color" comment="普通状态的边框颜色"/>
+		<TV name="Focus" value="0x8CB5DE" type="color" comment="得到焦点的边框颜色"/>
+		<TV name="Highlight" value="0x5799DC" type="color" comment="高亮边框色"/>
+		<TV name="UI" value="0x90B1D8" type="color" comment="内部边框色"/>
+		<TV name="Tab" value="0x90B1D8" type="color" comment="Tab页的边框色"/>
+	</TG>
+	<TG name="Font">
+	    <TV name="Normal" type="rich">
+			<!-- 默认字体 -->
+			<Value>
+				<Font height="9"/>
+			</Value>
+		</TV>
+		<TV name="Logo" type="rich">
+			<!-- 大字体，加粗 -->
+			<Value>
+				<Font height="11" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Title" type="rich">
+			<!-- 界面 Title 字体加粗 -->
+			<Value>
+				<Font height="10" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Link" type="rich">
+			<!-- 普通链接文字字体 -->
+			<Value>
+				<Font height="9" underline="true"/>
+			</Value>
+		</TV>
+		<TV name="Bold" type="rich">
+			<!-- 粗体 -->
+			<Value>
+				<Font height="9" weight="600"/>
+			</Value>
+		</TV>
+		<TV name="Big" type="rich">
+			<!-- 大字体 -->
+			<Value>
+				<Font height

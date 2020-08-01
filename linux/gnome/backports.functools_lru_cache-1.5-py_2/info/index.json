@@ -1,0 +1,18 @@
+{
+  "arch": null,
+  "build": "py_2",
+  "build_number": 2,
+  "depends": [
+    "backports",
+    "python",
+    "setuptools"
+  ],
+  "license": "MIT",
+  "license_family": "MIT",
+  "name": "backports.functools_lru_cache",
+  "noarch": "python",
+  "platform": null,
+  "subdir": "noarch",
+  "timestamp": 1560422185119,
+  "version": "1.5"
+}

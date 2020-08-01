@@ -1,0 +1,48 @@
+VARIABLES
+.......................................
+a=hello			//there should be no space
+b="hello world"
+
+// taking input
+read name
+'aman'
+
+//printing output
+echo $a
+echo $name
+
+......................................
+Quoting
+.....................................
+
+var="hello world"	// hello world
+echo $var		// hello world
+echo $(var)		// hello world
+echo "$var"		// hello world
+echo 'var'		// var
+echo '$var'		// $var
+echo \$var		// $var
+
+.....................................
+Environmental Variable
+.....................................
+
+$HOME		// home dir of user
+$PATH		// colon separated executable paths
+$PS1		// prompt of shell
+$PS2		// 2ndry prompt for additional input (>)
+$IFS		// input field seprators (space tab newline)
+
+.....................................
+Parameter Variable
+.....................................
+
+$0		// name of the script running
+$1		// first parameter passed
+$2		// 2nd parameter passed
+$*		// list of parameter separated by IFS
+$@		// list of parameter separated by space
+$#		// no. of parameter passed
+$$		// pid of script
+
+

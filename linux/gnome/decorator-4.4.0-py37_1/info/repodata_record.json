@@ -1,0 +1,8 @@
+â" toolTips="ARGB:°´ÏÂÌ¬µÄÎÄ×ÖÑÕÉ«" />
+		<prop field="toolTip2" type="BSTR" mode="×Ö·û´®" group="¸ß¼¶" toolTips="BSTR:Double-face·ç¸ñÏÂµÄÌáÊ¾ÐÅÏ¢¡£Ä¬ÈÏÎª¿Õ" />
+		<prop field="textHidden" type="BOOL" group="¸ß¼¶" toolTips="BOOL:ÊÇ·ñÒþ²ØÎÄ×Ö¡£Ä¬ÈÏÎªFALSE" />
+		<prop field="textureHidden" type="BOOL" group="¸ß¼¶" toolTips="BOOL:ÊÇ·ñÒþ²ØÍ¼Æ¬¡£Ä¬ÈÏÎªFALSE" />
+		<prop field="textInching" type="POINT" group="¸ß¼¶" toolTips="POINT:ÎÄ×ÖÏÔÊ¾µÄÎ¢µ÷¡£Ä¬ÈÏÎª(0,1)" />
+		<prop field="textureInching" type="POINT" group="¸ß¼¶" toolTips="POINT:Í¼Æ¬ÏÔÊ¾µÄÎ¢µ÷¡£Ä¬ÈÏÎª(0,0)" />
+		<prop field="sinkage" type="POINT" group="¸ß¼¶" toolTips="POINT:ÏÂ³ÁµÄÆ«ÒÆ¡£Ä¬ÈÏÎª(1,1)" />
+		<prop field="font" type="IGF

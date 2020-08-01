@@ -1,0 +1,19 @@
+
+
+charAt(index)
+equals()
+equalIgnoreCase(str)
+length()
+replace(oldChar, newChar)
+substring(begin [,end])
+
+toLowerCase()
+toUpperCase()
+
+trim()
+
+
+valueOF()                       :- convert premitive data types to strings
+compareTo(str)                   :- compare to string and return 1,-1,0
+compareToIgnoreCase(str)
+

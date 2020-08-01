@@ -1,0 +1,38 @@
+nText" value="0x383838" type="color" comment="按钮文字颜色"/>
+    <TV name="HomePageAllDetect" value="0x110e27" type="color" comment="HomePage标题颜色"/>
+    <TV name="MainScanDangerColor" value="0xe45c27" type="color" comment="首页体检危险项的颜色"/>
+    <TV name="MainScanInfoColor" value="0x047ecb" type="color" comment="首页体检提示项的颜色"/>
+    <TV name="TipLink" value="0xFF777777" type="color" comment="Tips链接文字颜色，普通"/>
+    <TV name="TipLinkHighlight" value="0xFF777777" type="color" comment="Tips链接文字颜色，高亮"/>
+    <TV name="TipLinkPushed" value="0xFF777777" type="color" comment="Tips链接文字颜色，按下"/>
+    <TV name="UpdateLink" value="0xFFB7E7FD" type="color" comment="更新提示链接颜色"/>
+    <TV name="QQPCMgrNormalColor" value="0xFF383838" type="color" comment="电脑管家文字默认颜色"/>
+  </TG>
+  <TG name="Color" comment="边框颜色">
+    <TV name="MaskColor" value="0xFF00FF" type="color" comment="图片屏蔽色，透明色"/>
+    <TV name="Background" value="0xFFFFFF" type="color" comment="控件底色"/>
+    <TV name="OuterBorder" value="0x8ab0de" type="color" comment="外框颜色"/>
+    <TV name="CtrlBorderNormal" value="0x6e9ad0" type="color" comment="控件边框色"/>
+    <TV name="CtrlBorderHoverGlow" value="0x98e8ff" type="color" comment="控件移上边框发光色"/>
+    <TV name="CtrlBorderPushedGlow" value="0x98e8ff" type="color" comment="控件按下边框发光色"/>
+    <TV name="CtrlBorderHover" value="0x438ace" type="color" comment="控件移上边框色"/>
+    <TV name="CtrlBorderPushed" value="0x438ace" type="color" comment="控件按下边框色"/>
+    <TV name="SelectedOuterBorder" value="0x0087c5" type="color" comment="选中外框"/>
+    <TV name="SelectedInnerBorder" value="0x81b6e4" type="color" comment="选中内框"/>
+    <TV name="SelectedBackground" value="0x68a7de" type="color" comment="选中底色"/>
+    <TV name="SelectedOuterBorder2" value="0xffd5a7" type="color" comment="选中外框2"/>
+    <TV name="SelectedInnerBorder2" value="0xfffcf7" type="color" comment="选中内框2"/>
+    <TV name="SelectedBackground2" value="0xffefd8" type="color" comment="选中底色2"/>
+    <TV name="IconButtonInnerBorder" value="0xf0f9fe" type="color" comment="图标按钮内边框"/>
+    <TV name="IconButtonOuterBorder" value="0x438ace" type="color" comment="图标按钮外边框"/>
+    <TV name="IconButtonGradualTop" value="0xc6ebfd" type="color" comment="图标渐变上缘"/>
+    <TV name="IconButtonGradualBottom" value="0x8bd3f7" type="color" comment="图标按钮渐变下缘"/>
+    <TV name="ImageOuterBorder" value="0xafcaed" type="color" comment="图片外边框"/>
+    <TV name="ImageInnerBorder" value="0x000000" type="color" comment="图片内边框"/>
+    <TV name="ImageSelectedInnerBorder" value="0x008cff" type="color" comment="图片选中内边框"/>
+    <TV name="ListItemBackground1" value="0xf2f7fd" type="color" comment="列表分隔底色(深)"/>
+    <TV name="ListItemBackground2" value="0xf9fbfe" type="color" comment="列表分隔底色(浅)"/>
+    <TV name="ClientAreaGradualTop" value="0x000000" type="color" comment="界面内底上缘色"/>
+    <TV name="ClientAreaGradualBottom" value="0xf1f8fa" type="color" comment="界面内底下缘色"/>
+    <TV name="MenuInnerBorder" value="0xb4dbff" type="color" comment="菜单内框"/>
+    <TV name="MenuOuterBorder" value="0x4879b8" type="color" comment="菜�

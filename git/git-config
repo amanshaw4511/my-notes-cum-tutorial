@@ -1,0 +1,11 @@
+# setting username and emai
+git config --global user.name "aman shaw"
+git config --global user.email "amanshaw@gmail.com"
+
+
+# setting default editor
+git config --global core.editor vim
+
+# listing git settings
+git config --list
+ 

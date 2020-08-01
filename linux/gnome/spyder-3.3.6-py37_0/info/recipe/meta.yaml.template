@@ -1,0 +1,92 @@
+)/o) {
+			print "PRE_RESTART($1)\n" if ($dbg_values > 1);
+			$av_preprocessor = 1;
+
+			push(@av_paren_type, $av_paren_type[$#av_paren_type]);
+
+			$type = 'E';
+
+		} elsif ($cur =~ /^(\#\s*(?:endif))/o) {
+			print "PRE_END($1)\n" if ($dbg_values > 1);
+
+			$av_preprocessor = 1;
+
+			# Assume all arms of the conditional end as this
+			# one does, and continue as if the #endif was not here.
+			pop(@av_paren_type);
+			push(@av_paren_type, $type);
+			$type = 'E';
+
+		} elsif ($cur =~ /^(\\\n)/o) {
+			print "PRECONT($1)\n" if ($dbg_values > 1);
+
+		} elsif ($cur =~ /^(__attribute__)\s*\(?/o) {
+			print "ATTR($1)\n" if ($dbg_values > 1);
+			$av_pending = $type;
+			$type = 'N';
+
+		} elsif ($cur =~ /^(sizeof)\s*(\()?/o) {
+			print "SIZEOF($1)\n" if ($dbg_values > 1);
+			if (defined $2) {
+				$av_pending = 'V';
+			}
+			$type = 'N';
+
+		} elsif ($cur =~ /^(if|while|for)\b/o) {
+			print "COND($1)\n" if ($dbg_values > 1);
+			$av_pending = 'E';
+			$type = 'N';
+
+		} elsif ($cur =~/^(case)/o) {
+			print "CASE($1)\n" if ($dbg_values > 1);
+			$av_pend_colon = 'C';
+			$type = 'N';
+
+		} elsif ($cur =~/^(return|else|goto|typeof|__typeof__)\b/o) {
+			print "KEYWORD($1)\n" if ($dbg_values > 1);
+			$type = 'N';
+
+		} elsif ($cur =~ /^(\()/o) {
+			print "PAREN('$1')\n" if ($dbg_values > 1);
+			push(@av_paren_type, $av_pending);
+			$av_pending = '_';
+			$type = 'N';
+
+		} elsif ($cur =~ /^(\))/o) {
+			my $new_type = pop(@av_paren_type);
+			if ($new_type ne '_') {
+				$type = $new_type;
+				print "PAREN('$1') -> $type\n"
+							if ($dbg_values > 1);
+			} else {
+				print "PAREN('$1')\n" if ($dbg_values > 1);
+			}
+
+		} elsif ($cur =~ /^($Ident)\s*\(/o) {
+			print "FUNC($1)\n" if ($dbg_values > 1);
+			$type = 'V';
+			$av_pending = 'V';
+
+		} elsif ($cur =~ /^($Ident\s*):(?:\s*\d+\s*(,|=|;))?/) {
+			if (defined $2 && $type eq 'C' || $type eq 'T') {
+				$av_pend_colon = 'B';
+			} elsif ($type eq 'E') {
+				$av_pend_colon = 'L';
+			}
+			print "IDENT_COLON($1,$type>$av_pend_colon)\n" if ($dbg_values > 1);
+			$type = 'V';
+
+		} elsif ($cur =~ /^($Ident|$Constant)/o) {
+			print "IDENT($1)\n" if ($dbg_values > 1);
+			$type = 'V';
+
+		} elsif ($cur =~ /^($Assignment)/o) {
+			print "ASSIGN($1)\n" if ($dbg_values > 1);
+			$type = 'N';
+
+		} elsif ($cur =~/^(;|{|})/) {
+			print "END($1)\n" if ($dbg_values > 1);
+			$type = 'E';
+			$av_pend_colon = 'O';
+
+		} elsif ($cur =~/^(,)/) 

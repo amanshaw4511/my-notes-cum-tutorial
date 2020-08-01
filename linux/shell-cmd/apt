@@ -1,0 +1,42 @@
+# apt : advance packaging tools
+
+# search for package in reporsitory
+apt-cache search package
+
+# show details of package in reporsitroy
+apt-cache show package
+
+# install a package
+apt-get install package
+
+# remove a package
+apt-get remove package
+
+# remove package with configuration files
+apt-get purge package
+
+# updating all package info in reporsitory
+apt-get update
+
+# upgrade all installed package
+apt-get upgrade
+
+// adding reporsitory 
+vim /etc/apt/sources.list
+
+deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+deb http://security.ubuntu.com/ubuntu bionic-security universe
+# deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+# deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
+
+// main : contains supported open source software
+// universe : contains community-maintained open source software
+// multiverse : contains software restricted by copyright or other legal issues
+// restricted : contains proprietary device drivers
+// backports : contains package from later releases
+
+## download software from git reporsitory 
+:git clone "https://www.github.com/amanshaw4511/soft.git"
+
+

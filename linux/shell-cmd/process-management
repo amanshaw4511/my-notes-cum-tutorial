@@ -1,0 +1,60 @@
+# ps options
+
+unix98 options : grouped by "-"
+BSD options    : grouped without '-"
+GNU long options : groupted by "--"
+
+ps -e		// show all process
+ps -ef		// show all process with detail\
+ps -eH		// show all process as process tree
+ps -eh		// show all process as process tree but in long way
+ps -e --forest 	// display process tree (looks better)
+
+
+## nice n renice 
+// change perioriy of process
+// value of nice or renice ranges
+	-20	to    +19
+// (+)ve value - less priory , (-)ve value - high priority
+// default value is 0
+
+nice -n -10 /bin/slow_proc
+// increase priority of slow process by -10
+
+renice 20 <pid>
+// set priority to 20 of <pid>
+
+// it require sudo to increase priority of process but normal user can decrease or launch process
+
+## kill 
+kill -singnal/singnal_no <pid>
+kill -TERM <PID>
+kill -9 <PID>
+
+... signal ... number ... work
+ SIGHUP		1	Hangup : it stop and restart process with same <pid>
+ SIGINT		2	Intrrupt : weak kill signal (ctrl+c) that is not gaurantedd to work, but work in most cases
+ SIGQUIT	3	core dump : terminate process and save process info in memory. then save this info in cwd to file core.
+ SIGTERMM	15	Termination : it is the kill commmand default kill signal
+ SIGKILL	9	Force kill : it force process to stop and send process resource to /dev/null
+
+## killall
+killall -9 firefox
+// it kills all firefox process , it take process by name
+
+
+## at 
+// scheduling process
+
+at 7:20pm		: today 7:20pm
+at 7:20pm June 25	: on 25 june, 7:20pm
+at noon			: today at noon
+at noon June 25		: on 25 june, noon
+at tomorrow		: tomorrow
+at now + 20 minutes	: 
+at now + 10 hours	:
+at now + 5 days		:
+at now + 3 weeks	:
+at 7:20pm 06/25/2019	:
+
+## top

@@ -1,0 +1,70 @@
+............................................
+test or "["
+............................................
+
+if test condition ; then ....; fi
+if [ condition ; then .....; fi
+if [ condition ] ; then .....; fi
+
+// here "[" is equivalent to test , "]" is optional
+
+......................................
+test conditions
+.....................................
+
+## STRING OPERATORS
+
+str1 = str2		// equal to
+str2 != str2		// not equal to
+-n str			// string is not null
+-z str			// string is null
+str			// string is empty
+......................................
+## RELATIONAL OPERATORS
+
+exp1 -eq exp2		// equal to
+exp1 -ne exp2		// not equal to
+exp1 -gt exp2		// greater than
+exp1 -ge gxp2		// greater than or equal to
+exp1 -lt exp2		// less than
+exp1 -le exp2		// less than or equal to
+! expression		// exp is true
+
+.......................................
+## FILE OPERATORS 
+-d file			// is directory
+-f file 		// is reguler file
+-b file			// is block file
+-c file			// is character file
+-p file			// is namedpipe
+
+-r file			// is file readable
+-w file			// is file writable
+-x file			// is file executable
+
+-e file			// is file exist
+-s file			// is size > 0
+
+-g file			// true if group-set-id is set on file
+-u file			// true if user-set-id is set on file
+
+## BOOLEAN OPERATOR
+	
+	!	not
+	-a	and
+	-o	or
+
+.............................................
+((...)) expression
+............................................
+
+if ((exp)) ; then ....; fi
+
+examples.......
+
+a=2
+if ((a>2)) ; then echo yes; fi
+if ((a<2)) ; then ((a++)); fi
+if ((a==2)) ; then s=$((a+2)); fi
+
+

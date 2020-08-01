@@ -1,0 +1,7 @@
+{
+  "c_compiler_version": "7.3.0",
+  "cxx_compiler": "gxx",
+  "VERBOSE_CM": "VERBOSE=1",
+  "cxx_compiler_version": "7.3.0",
+  "c_compiler": "gcc"
+}

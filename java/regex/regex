@@ -1,0 +1,58 @@
+java.util.regex package provide following classes and interfaces
+
+1. MatchResult(I)
+2. Pattern
+3. Matcher                   - - > MatchResult
+4. PatternSyntaxException                           : when regex syntax is incorrect (checked Exception )
+
+
+Pattern p = Pattern.compile(regex_str);
+Matcher m = p.matcher(intput_str);
+
+OR
+
+Matcher m = Pattern.compile(regex_str).matcher(input_str)
+
+m.usePattern(new Pattern.compile(regex_str))     // change pattern used by matcher
+m.pattern()                                      // return regex pattern used by matcher
+
+// matching //
+
+m.matches()             // true if whole input matches pattern
+
+// print all matching groups
+    while(m.find()){
+        SOP("group = " + m.group());
+        SOP("startIndex = " + m.start());
+        SOP("EndIndex = " + m.end());
+    }
+
+m.reset()              // start finding from first match(group)
+m.find(Nth Match)      // find Nth match
+m.hitEnd()             // true if searching reached end
+
+// replace //
+m.replaceFirst()       // replace first match
+m.replaceAll()         // replace all match
+
+// region //
+m.regin(int start, int end)     // search in specic region of input (under index specified)
+m.regionStart()                 // returns starting index of region
+m.regionEnd()                   // returns ending index of region
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+Reguler Expression in String class
+
+
+"str".matches(regex_str)
+"str".replaceFirst(regex_str)
+"str".replaceAll(regex_str)
+
+
+
+
+
+
+
