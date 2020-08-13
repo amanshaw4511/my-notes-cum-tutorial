@@ -1,0 +1,23 @@
+from flask_marshmello import Marshmallo
+
+ma = Marshmallo(app)
+
+class EmpSchema(ma.Schema):
+    class Meta :
+        fields = ('id','name','salary','age','pin')
+
+
+emp_schema = EmpSchema()            # single row
+emps_schema = EmpSchema(many=True)  # multi row
+
+
+# single raw
+emp = Emp.query.get(id)
+return emp_schema.jsonify(emp)
+
+# multi row
+emps = Emp.query.all()
+result = emps_schema.dumps(emp)
+return jsonify(result)
+
+

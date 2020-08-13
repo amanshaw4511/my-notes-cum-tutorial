@@ -1,29 +1,34 @@
-## moving of curser
+########################### MOTION ########################################################
 # by one char
 	k			-> up
 h		;		-> left-right
 	j			-> down
 
 # by one word
-b			-> move curser to begining of the word (moves backward)
-e			-> move curser to end of word (moves forward)
-w			-> move curser to begining of the next word (moves forward) 
+b			-> (begining of word) move curser to begining of the word (moves backward)
+e			-> (end of word) move curser to end of word (moves forward)
+w			-> (word) move curser to begining of the next word (moves forward) 
  
 # by line
-$ 			-> move to begining of line
-^			-> move to end of line
-gg			-> move to first line 
-2gg			-> move to 2nd line
-G			-> move to last line
+$ 			-> (end of line) move to end of line
+^			-> (begining of line) move to begining of line
+gg			-> (first line) move to first line 
+<n>gg		-> (nth line) move to <n> th  line
+G			-> (last line) move to last line
 
+###############################################################################################
 ctrl + g		-> show filename, percent, total line 
+
 
 ## insert
 a			-> insert after cursor (append)
+A           -> insert at end of line
 o			-> insert in next line
 O			-> insert in prev line
-
 i			-> insert before cursor / inner command
+
+
+
 diw			-> delete inner word : delete the current word in which the curser is
 ci[			-> change ineer [] : this will delete all inside [] and enter into insert mode
 cip			-> paragraph
@@ -38,17 +43,18 @@ R			-> enter to replace mode
 			- backspace to erase
 
 ## delete
-d motion		-> delete
-x			-> delete one char before cursor
+d motion	-> delete
+x			-> delete one char after cursor
+X           -> delete one char before cursor
 
 ## copy
-y motion		-> copy
+y motion	-> copy
 
 ## paste or put
 p			-> paste the deleted or coppied text
 
 ## change
-c motion		-> d{motion} i
+c motion	-> d{motion} i
 
 ## indent
 >2j			-> indent current and next 2 line 
@@ -118,4 +124,5 @@ p			-> paste text
 :set relativenumber
 
 
-
+## reindent whole file
+gg=G

@@ -1,0 +1,73 @@
+# open files in tabs in vim
+vim -p <file1> <file2>
+
+# open a new tab :
+
+tabe|tabnew
+:tabedit <file>         -> open file in new tab
+
+tabf
+:tabfind <file>         -> open file in new tab ( it find file in the "path" )
+:set path=.,,**         ->  .   -> current file dir
+                                -> empty (between commas) - current dir
+                            **  -> each dir under current dir
+
+ctrl+w gf               -> open new tab and edit the file name under the cursor
+ctrl+w gF               -> Open a new tab page and edit the file name under the cursor
+                           and jump to the line number following the file name.
+
+
+# closing tab
+
+tabc/
+:tabclose[!] [i]           -> close Ith tab
+:tabonly[!]                -> close all tabs except current
+
+# list all tabs
+
+tabs
+
+
+# switching between tabs
+
+tabf/tabrewind/tabr/*1gt*
+:tabfirst               -> first tab
+
+tabl/
+:tablast                -> last tab
+
+tabn/*[i]gt*
+:tabnext [i]            -> next tab       
+
+tabp/*[i]gT*
+:tabprev [i]            -> prev tab      
+
+
+# reordering tab
+
+tabm/
+:tabmove [i]            -> swap tab with Ith tab
+:tabm 0                 -> swap with first tab
+:tabm                   -> swap with last tab
+
+# looping over tabs
+
+tabd/
+:tabdo {cmd}            -> execute command in all tabs
+
+
+:tabs                   -> list all tabs
+
+
+
+# my maping
+tj   tabnext<CR>
+tk   tabprev<CR>
+th   tabfirst<CR>
+tl   tablast<CR>
+tq   tabclose<CR>
+
+tn  tabnext<space>
+te  tabedit<space>
+tm  tabmove<space>
+

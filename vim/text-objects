@@ -1,0 +1,26 @@
+
+i  =>  inner (under the give text object)
+a  =>  around ( under text object, text object , and sorrounding whitespace)
+
+# noun (object)
+
+iw    -> inner word
+is    -> inner sentense
+ip    -> inner paragraph
+it    -> inner tag
+i'    -> inner ' '
+i"    -> inner " "
+i`    -> inner ` `
+i(    -> inner ()
+i{    -> inner {}
+i[    -> inner []
+
+
+# verb (operation)
+
+ciw  --- change inner word
+diw  --- delete inner word
+yiw  --- copy inner word
+
+
+

@@ -7,6 +7,7 @@ app.config['SECRET_KEY'] = "secretkeyldkjsf"
 db = SQLAlchemy(app)
 
 class Employee(db.Model):
+    __tablename__ = 'employee'
     id = db.Column("employee_id",db.Integer,primary_key=True)
     name = db.Column(db.String(100))
     salary = db.Column(db.Float(50))
@@ -34,4 +35,33 @@ def add():
     flash('REcord was successfully added')
     return redirect(url_for('list_employees'))
 
-    
+##############################33
+
+## create
+db.create_all()
+
+## add
+db.session.add(emp)
+db.session.commit()
+
+# delete
+db.session.delete(emp)
+db.session.commit()
+
+# query all
+Emp.query.all()
+
+# query by primary key
+Emp.query.get(id)
+
+# query by other column
+Emp.query.filter_by(name="ram").first()
+
+# insert 
+emp = Emp.query.get(id)
+emp.name = "ram"
+emp.salary = 34324
+.........
+db.session.commit()
+
+#

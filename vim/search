@@ -1,0 +1,19 @@
+
+f       -> find
+t       -> find target
+/       -> search
+
+
+### f
+-- f mv the curser before the found char
+
+## t
+-- t mv the curser after the found char
+
+
+## /
+-- mv the curser before the found string
+-- press C-n to find next and C-N to prev
+
+
+
