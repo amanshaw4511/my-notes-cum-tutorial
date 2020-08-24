@@ -5,13 +5,15 @@
 
  # redirection
 
- cmd > file		send output of command to file
- cmd >> file		append output of comma d to file
+ cmd > file	    	send output of command to file
+ cmd >> file		append output of commad to file
  cmd 2> file		send error of command to file
  cmd 2>> file 		append error of command to file
  cmd &> file		send both stdout n stderr to file
- cmd < file		takes input from file
+
+ cmd < file	    	takes input from file
  cmd <> file		file is used for both stdin n stdout for command
+ cmd <<< "string"     take string as input 
  cmd << file		here document
 
  // pipe
@@ -44,4 +46,14 @@ $ cat bb.txt
 first line in bb.txt
 second line in bb.txt
 
+# tee
+// send output to both stdout and file
+$ echo hello | tee file
+// it will echo hello in terminal and write hello in file 
 
+$ echo hello | tee -a file
+// it will echo hello in terminal and append hello in file
+
+## named pipe (fifo)
+// create named pipe
+mkfifo mypipe

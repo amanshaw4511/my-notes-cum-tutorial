@@ -1,0 +1,30 @@
+## tilde expansions 
+~               -> home dir
+~<username>     -> user home dir
+~+              -> current dir
+~-              -> prev dir
+
+
+####################################
+pushd           -> push a dir to stack
+dirs            -> list dirs in stack
+popd +<n>       -> remove (n)th item from stack
+
+expansions 
+~0              -> 1st dir in stack
+~<n>            -> (n-1)th dir in stack
+
+
+#####################################
+brace expansion ..
+
+$ echo 11{0,1,2}5
+1105 1115 1125
+
+Note: it will not work within the quotes
+
+$ echo "11{0,1,2}5"
+11{0,1,2}5
+
+
+

@@ -1,0 +1,8 @@
+
+>>          indent current line 
+<<          unindent current line
+
+in insert mode
+
+C-t         indent current line
+C-d         unindent current line

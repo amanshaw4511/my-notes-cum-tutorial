@@ -1,0 +1,27 @@
+# ref -> https://dev.to/javinpaul/10-simple-linux-tips-which-save-50-of-my-time-in-the-command-line-4moo
+
+# execute last command
+!!
+
+# excute last command of given command
+!vim        -> will open your last file
+!ls         -> will excute last ls -option you have excuted
+
+
+# ctrl + r -- to reverse search matching command
+ctrl + r 
+
+# use history command to get most used frequnnt command
+history | grep 'search_word'
+
+# regExp with grep and find command
+
+
+# using pip
+
+# use alias and define them in .bashrc
+
+#
+
+
+

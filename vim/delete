@@ -1,0 +1,14 @@
+# find and delete all lines contains aaaa
+:g/aaaa/d
+
+# find and delete all lines not contains aaaa
+:g!/aaaa/d
+or
+:v/aaaa/d
+
+
+
+
+
+
+

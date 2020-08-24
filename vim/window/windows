@@ -1,0 +1,51 @@
+
+# open a window
+
+sp/<C-w>s
+split [file]            -> horizontal split (up)
+
+vs/<C-w>v
+vsplit [file]           -> vertical split (left)
+
+
+vert/
+vertical {cmd}          -> open cmd in vertical split
+bot {cmd}               -> open cmd in horizontal split
+
+# closing
+
+q/<C-w>q
+quit[!]                 -> close current window
+
+on/<C-w>o
+only[!]                  -> close all windows except current
+
+# moving between windows
+
+<C-w><lt><up><dw><rt>
+<C-w>hjkl
+
+<C-w>t                  -> top left
+<C-w>b                  -> bottom right
+<C-w>p                  -> prev window
+
+# moving windows
+
+<C-w>r                  -> rotate clockwise (righward)
+<C-w>R                  -> rotate anticlockwise (leftward)
+
+<C-w>x                  -> exchange with next window
+
+# resizing window
+
+res/<C-w>[n]+                  
+resize +[n]             -> increase height by N 
+
+res/<C-w>[n]-
+resize -[n]             -> decrease height by N 
+
+<C-w>[n]<               -> decrease width by N
+<C-w>[n]>               -> increase width by N
+vertical resize +/-[n]
+
+

@@ -1,0 +1,22 @@
+
+alias python='python3'
+alias jupyter-notebook="~/.local/bin/jupyter-notebook --no-browser"
+alias firefox='/mnt/c/Program\ Files/Mozilla\ Firefox/firefox.exe'
+alias mpv='/mnt/c/Program\ Files/mpv/mpv.exe'
+alias open='cmd.exe /C start'
+alias pot='/mnt/c/Program\ Files/DAUM/PotPlayer/PotPlayerMini64.exe &'
+
+
+alias cls='clear && ls'
+mkcd(){ mkdir $1 && cd $1 ; }
+cdls(){ cd $1 && ls ; }
+javar(){ javac "$1.java" && java $1 ; }
+
+
+
+xdg-open(){  explorer.exe $1 ; }
+
+
+cp ~/.bashrc ~/.mybashrc ~/.vimrc ~/manual/manual/config_files
+
+cd
