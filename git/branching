@@ -3,10 +3,22 @@ git branch      # show branch in local-repo
 git branch -a   # show all brnach local and online
 
 # create a new branch
+git branch featur1  
+# create and chekout to new branch
 git checkout -b dev
+
 
 # swithcing to other branch
 git checkout dev
 
 # delete a branch
-git checkout -d dev
+git branch -d dev
+
+
+# merge branch to master
+git checkout master
+git merge feature1
+
+# view commit logs
+git log --all --decorate --oneline
+

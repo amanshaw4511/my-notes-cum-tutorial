@@ -1,0 +1,36 @@
+https://null-byte.wonderhowto.com/how-to/tutorial-create-wordlists-with-crunch-0165931/
+
+
+> crunch min max charset options
+
+
+
+
+
+# references :
+	@ 	-> lowercase letters
+	,	-> uppercase letters
+	%	-> numbers
+	^	-> special chars
+
+
+-t	 	-->  set specific pattern as reference
+-d		--> specifiy the no of dublicate
+
+
+> crunch 5 5 abcde14 -t @@@14 -d 2@
+
+	- generate wordlist from aab14 - eed14
+	- not start with aaa14 because -d 2@ is specified
+
+
+-i	--> invert the output
+
+-s cow12	--> starte sequence at cow12
+-e dde14	--> stop after sequence dde14
+
+
+-b 20mb 	--> generate 20Mb of wordlist
+-c 33		--> 33 no. of lines to write on wordlist
+
+

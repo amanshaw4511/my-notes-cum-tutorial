@@ -11,11 +11,19 @@ git add aa.py bb.txt cc.c
 # to add all files 
 git add .
 
+# list stagged files
+git ls-files
+
+# remove files from stagged area
+git reset HEAD <file>...
+git rm --cached aa.py bb.txt cc.c
+
 
 # commit changes to local-repo
 git commit -m "first commit"
 git commit -am "my commmit"  # to add and commit
-
+# change file to last commited state
+git checkout -- <files>...
 
 # check status of all files 
 git status

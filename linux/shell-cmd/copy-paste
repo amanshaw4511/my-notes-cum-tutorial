@@ -1,0 +1,9 @@
+# using xclip 
+
+## copy text to clip board
+> $ echo 'hello world' | xclip -selection clip
+
+
+## paste from clip board
+> $ xclip -out
+>   hello world 

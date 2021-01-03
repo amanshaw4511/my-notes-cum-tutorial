@@ -1,0 +1,28 @@
+
+# setup screen brightness
+
+1. install xbacklight
+
+2. if /sys/class/backlight/intel_backlight exist and xbacklight not working
+    add /etc/X11/xorg.conf file as :
+        
+        Section "Device"
+        Identifier  "Card0"
+        Driver      "intel"
+        Option      "Backlight"  "intel_backlight"
+        EndSection
+
+3. logout n login ( i3msg logout )        
+
+4.
+
+
+
+
+
+# lock   -->    lock
+# logout    --> i3-msg exit
+# suspend   --> lock && systemclt suspend
+# hibernate --> lock && systemclt hibernate
+# reboot    --> systemclt reboot
+# poweroff  --> systemclt poweroff

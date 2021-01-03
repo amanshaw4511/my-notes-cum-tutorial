@@ -1,0 +1,4 @@
+sudo apt install libguestfs-tools
+sudo virt-list-filesystems /path/to/vhdx
+sudo guestmount -a /path/to/vhdx -m /dev/xxxx -r /path/to/mountpoint -o allow_other
+

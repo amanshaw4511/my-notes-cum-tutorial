@@ -1,0 +1,26 @@
+set foldmethod=syntax
+## other options  --  indent
+                  -- 
+
+
+# shortcuts
+
+ # open n close folds
+zc      -->  close fold 
+za      -->  toggle fold
+
+zO      -->  open all folds and subfolds
+zC      -->  close all folds and subfolds
+zA      -->  toggle all folds and subfolds
+
+zM      -->  close all folds
+zR      -->  open all folds
+ # move in folds
+zj      -->  move to next fold
+zk      -->  move to prev fold
+
+zo      -->  open fold
+[z      -->  move to start line of the current opend fold
+]z      -->  move to end line of the current closed fold
+
+

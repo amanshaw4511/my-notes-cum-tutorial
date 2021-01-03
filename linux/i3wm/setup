@@ -1,0 +1,67 @@
+https://www.youtube.com/watch?v=8-S0cWnLBKg
+
+
+$mod + enter  -> open terminal
+config file -> ~/.config/i3/config
+
+# to know device id
+    xinput list
+
+# to know property id
+    xinput list-props <device-id>
+
+# enable touchpad tapping
+# enable natural scrolling
+    xinput set-prop <device-id> <property-id> 1
+    
+
+
+> sudo apt install i3status dmenu i3lock xbacklight feh conky
+
+    i3status    -> status bar
+    dmenu       -> launch app
+    xbacklight  -> screen brightness
+    feh         -> set wallpaper
+    conky       -> dispaly sys info in awesome way
+
+
+$mod + d    -> open dmenu
+
+$mod + v    -> vertical split
+$mod + h    -> horizontal split
+
+$mod + f    -> full screen
+$mod + r    -> resize screen
+
+# Close and Reload
+
+$mod + Q    -> kill windows
+$mod + E    -> exit i3 
+$mod + C    -> reload config file
+$mod + R    -> restart i3
+
+# Windows
+    $mod + w    -> tabbed layout
+    $mod + e    -> vert & horiz layout(switching)
+    $mod + s    -> stacked layout
+    $mod + a    -> focus parent
+
+# Switching between Windows
+    $mod + <dir key>
+    $mod + <hjkl key>
+
+# Moving Windows
+    $mod + shift + <dir key>
+    $mod + shift + <hjkl key>
+
+# Floating window
+    $mod + shift +  space    -> make current window floating n vice-versa
+    $mod + space             -> switch between floating n other windows
+    $mod + r                 -> resize floating window
+    $mod + shift + <dir key> -> move floating window
+
+    
+# Workspace
+    $mod + num          -> move/open to workspace<num>
+    $mod + shift + num  -> moving window to workspace<num>
+    
