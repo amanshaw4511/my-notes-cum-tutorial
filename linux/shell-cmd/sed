@@ -1,0 +1,58 @@
+sed -options '....' file
+sed -n 'range verb' file
+sed -n '[range] [/pattern] verb' file
+sed -n '[range] [s/pattern/replacement/[flags] verb' file
+
+
+## options :
+-e	-> expression
+-f	-> expresssion from file
+-r,-E	-> extended regexp
+-i	-> inplace operation
+
+
+
+## range :
+m	-> in rangeClosed(m,m)
+m,n	-> in rangeClosed(m,n)
+,n	-> in rangeClosed(0,n)
+m,$	-> in rangeClosed(m,last)
+m~x	-> in rangeClosed(m,x,)
+m,n!	-> not in rangeClosed(m,n)
+
+## verbs :
+a 	-> append
+d	-> delete
+p	-> print
+c	-> change (replace)
+
+# substitude option
+
+## special replacement chars
+\n	-> (n)th group match string  (back substitution)
+
+\L	-> turn replacement to lowercase until \U or \E found
+\U	-> turn replacement to uppercase until \L or \E found
+\E	-> stop case conversion started by \U or \L
+
+\l	-> turn next char to lowercase
+\u	-> turn next char to uppercase
+
+
+## flags :
+g	-> replace all occurance
+I	-> ignore case
+n	-> replace (n)th occurance
+ng	-> replace from (n)th occurance
+p	-> print
+
+'''sed '/apple/s/hello/world/' input.txt > output.txt''' 
+find line containing 'apple' -> replace 'hello' with 'world' in that line
+
+> sed '/apple/!s/hello/world/' input.txt > output.txt
+find line not containing 'apple' -> replace 'hello' with 'world' in that line
+
+> sed '4,17!s/hello/world/' input.txt > output.txt
+in all lines except form 5 to 17 -> replace 'hello' with 'world'
+
+> 

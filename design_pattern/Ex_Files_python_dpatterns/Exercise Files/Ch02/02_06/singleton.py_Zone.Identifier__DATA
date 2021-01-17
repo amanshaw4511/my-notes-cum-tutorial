@@ -1,4 +1,0 @@
-[ZoneTransfer]
-ZoneId=3
-ReferrerUrl=https://www.linkedin.com/learning/python-design-patterns/other-qualities?u=2154233
-HostUrl=https://files3.lynda.com/secure/courses/369187/exercises/Ex_Files_python_dpatterns.zip?xkMYSCzF2RnUOj82rNIurZBpb74RVAwwhTnvAraxiBGeJZlxCnc3iTKtbsujC1k3ZmAANBcTJPP40doUcDKwXpQIvuTRINkPECNqbHjgxWw_aBaehQXRayhqBiEQdjIsSXPEIo42Ci2bJNfLv6IJjPnumuYftOarg8Ro8Q
