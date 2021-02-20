@@ -1,0 +1,11 @@
+
+# get the list of quality available (audio, video , both)
+
+youtube-dl -F <video-link>
+
+
+# download the given quality
+
+youtube-dl -f <code> <video-link>
+
+
