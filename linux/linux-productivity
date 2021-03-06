@@ -25,3 +25,9 @@ history | grep 'search_word'
 
 
 
+# copy paste using terminal
+
+# copy
+echo "texted to copy" | xclip -out -sel clip
+# paste
+xclip -out -sel clip > file_to_paste.txt
