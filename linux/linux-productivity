@@ -11,6 +11,16 @@
 # ctrl + r -- to reverse search matching command
 ctrl + r 
 
+# moving in writtent command
+ctrl + a     -> move to begining
+ctrl + e     -> move to end
+
+ctrl + f     -> move one character forward
+ctrl + b     -> move one character backward
+
+ctrl + d     -> delete a character after the cursor
+
+
 # use history command to get most used frequnnt command
 history | grep 'search_word'
 
