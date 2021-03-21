@@ -21,6 +21,9 @@ apt-get update
 # upgrade all installed package
 apt-get upgrade
 
+# remove unused dependency
+apt auto-remove
+
 // adding reporsitory 
 vim /etc/apt/sources.list
 

@@ -1,9 +1,0 @@
-// remove all files ends with "~"
-find ./ -name "*~" | xargs rm
-
-.. xargs takes stdin and apply it as parameter to the command
-
-// this can also done by
-
-rm $(find ./ -name "*~")
-
