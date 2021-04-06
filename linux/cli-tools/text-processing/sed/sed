@@ -20,6 +20,8 @@ m,$	-> in rangeClosed(m,last)
 m~x	-> in rangeClosed(m,x,)
 m,n!	-> not in rangeClosed(m,n)
 
+note : index start with 1
+
 ## verbs :
 a 	-> append
 d	-> delete
