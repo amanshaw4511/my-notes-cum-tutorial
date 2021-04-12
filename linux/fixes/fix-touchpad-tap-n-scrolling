@@ -1,0 +1,20 @@
+https://unix.stackexchange.com/questions/289622/i3wm-how-to-configure-touchpad
+https://man.archlinux.org/man/libinput.4
+
+
+# create file
+/etc/X11/xorg.conf.d/30-touchpad.conf
+    Section "InputClass"
+        Identifier "touchpad"
+        Driver "libinput"
+        MatchIsTouchpad "on"
+        Option "Tapping" "on"
+    EndSection
+
+
+Options :
+    
+    Tapping             on, off
+    NaturalScrolling    on, off
+    DisableWhileTyping  on, off
+

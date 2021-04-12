@@ -1,0 +1,9 @@
+2. if /sys/class/backlight/intel_backlight exist and xbacklight not working
+add /etc/X11/xorg.conf file as :
+
+Section "Device"
+Identifier  "Card0"
+Driver      "intel"
+Option      "Backlight"  "intel_backlight"
+EndSection
+
