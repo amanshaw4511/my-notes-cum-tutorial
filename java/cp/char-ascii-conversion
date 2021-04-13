@@ -1,0 +1,11 @@
+
+
+# char to int
+int x = ch - '0'
+int x = Character.getNumericValue(ch)
+
+
+
+# int to char
+int ch = (char)(x + '0')
+int ch = Character.forDigit(x , 10)
