@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+[ $# -eq 0 ] && exit
+
+if [ $1 = "install" ] 
+then
+    sudo ln -s "$PWD/mman" /usr/bin/mman
+    exit
+fi
+
+
+[ ! -f /dev/shm/mman ] && echo /home/aman/my/github/manual > /dev/shm/mman
+    
+
+cd $(cat /dev/shm/mman)
+$@
+
+echo $PWD > /dev/shm/mman
+
