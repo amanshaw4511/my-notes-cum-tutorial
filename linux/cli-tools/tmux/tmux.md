@@ -57,4 +57,5 @@ mod = ctrl + b
 
     
 
-
+## enable mouse
+    set -g mouse on

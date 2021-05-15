@@ -1,0 +1,4 @@
+
+# any to str
+
+let s = String::from("hello")

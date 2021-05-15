@@ -8,6 +8,21 @@ then
     exit
 fi
 
+if [ $1 = "fzf" -a $2 = "vim" ]
+then 
+    cd /home/aman/my/github/manual
+    nvim $(fzf)
+    exit
+fi
+
+if [ $1 = "fzf" ]
+then 
+    cd /home/aman/my/github/manual
+    bat $(fzf)
+    exit
+fi
+
+
 
 [ ! -f /dev/shm/mman ] && echo /home/aman/my/github/manual > /dev/shm/mman
     

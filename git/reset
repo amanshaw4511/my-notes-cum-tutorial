@@ -6,3 +6,7 @@ git reset HEAD~1
 
 # reverse commit to any commit
 git reset commit_hash
+
+
+# add file and add changes to prev commit
+git commit --amend
