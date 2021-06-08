@@ -1,0 +1,67 @@
+
+# quit
+ZCtrl + z
+:q
+
+# naviagation
+j               ->  down
+k               ->  up
+gg              ->  top
+G               ->  bottom
+
+h               ->  go to parent dir (cd ..)
+j               ->  go to dir or open file
+
+
+# modes
+    + normal mode
+    + command mode
+
+# opening file type
+
+filetype    -> for cli command ( e.g. less )
+filextype   -> for gui command ( e.g. firefox )
+
+
+# defining new associations
+filetype *.html,*.htm
+        \ {open with firefox}
+        \ firefox %f &,
+        
+
+# open with other app 
+!!vim %c        -> for cli command
+!firefox %c     -> for gui command
+!mpv %c &       -> open in backgroud
+
+
+
+# file operations
+yy          -> yank file
+
+p           -> copy yanked files
+P (capital) -> move yanked files 
+
+dd          -> delete (move to trash)
+DD          -> parmanent delete
+
+
+## comamnd line mode
+:copy       -> copy selected files from active to inactive pane (fail on name conflict)
+:copy!      -> copy selected files from active to inactive pane (override files at destination)
+
+:move       -> move selected files from active to inactive pane (fail on name conflict)
+:move!      -> move selected files from active to inactive pane (override files at destination)
+
+:delete     -> move selected files to trash 
+:delete!    -> parmanent delete selected files
+
+:mkdir dirname -> make new directory
+
+
+## run operations in backgroud
+:copy &
+:move &
+:delete &
+:delete! &
+
