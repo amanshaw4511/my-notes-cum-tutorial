@@ -1,9 +1,7 @@
 # pane (split)
-## vertical split
-    %
-
-## horizontal split
-    "
+## pane split
+    %   -> horizontal
+    "   -> vertical
 
 ## resize split pane
     C-Left
@@ -13,6 +11,9 @@
 
 ## spread pane evenly
     E
+
+## full screen pane (zoom)
+    z
 
 ## swap pane
     {   -> above

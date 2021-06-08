@@ -1,0 +1,47 @@
+
+
+gpg --clearsign message.txt
+# output message.txt.asc in plain text
+# suitable for pasting in an email or posting online
+
+
+gpg --sign message.txt
+# output message.txt.gpg (binary)
+
+
+# both of these can be verified with --decrypt
+gpg --decrypt message.txt.asc
+gpg --decrypt message.txt.gpg
+# this will print out message along with signature
+
+
+# encrypt ans sign
+## symmetric
+gpg --sign --symmetric message.txt
+
+## asymmetric 
+gpg --sign --asymmetric --recepient aman@mail.com message.txt
+
+
+# verify 
+## verify signed that include signature
+gpg --verify message.txt.asc
+
+## verify and extract original message
+gpg --output message.txt message.txt.asc
+
+
+# detached signature
+gpg --detach-sign message.txt
+# will create message.txt.sig
+
+# this will automatically check the signature
+# against a file named "message.txt"
+gpg --verify message.txt.sig
+
+# specify the file to check against
+gpg --verify message.txt.sign message.txt
+
+
+
+

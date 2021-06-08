@@ -1,0 +1,43 @@
+## create a private key 
+gpg --gen-key
+
+
+## list all keys [yours(private) + public(others)]
+    gpg --list-keys
+
+## list private keys
+    gpg --list-secret-keys
+
+
+
+## export private key
+    gpg --export-secret-keys --armor XXXX > key.asc
+
+    --armor     -> for base64 ascii output
+
+
+## delete a key
+    # use id listed with --list-secret-keys
+    gpt --delete-secret-keys XXXX
+
+    # use id listed with --list-keys
+    gpg --delete-keys XXXX
+
+
+## import a key
+    gpg --import key.asc
+
+    # import from keyserver
+    gpg --keyserver pgp.mit.edu --recv C3A435D45
+
+
+## generate revocation key
+    gpg --output revocation_cert.asc --gen-revoke <key>
+
+
+
+## push public key to keyserver
+    gpg --keyserver hkp://pgp.mit.edu --send-keys XXXXX
+
+
+

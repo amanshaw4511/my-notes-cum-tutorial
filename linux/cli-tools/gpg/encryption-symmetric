@@ -1,0 +1,19 @@
+gpg --symmetric message.txt
+# prompt for password
+# create message.txt.gpg (binary)
+
+gpg --symmetric --armor message.txt
+# prompt for password
+# create message.txt.gpg 
+
+# specify encryption algo
+gpg --symmetric --cipher-algo AES256
+
+# get list of cipher algo
+gpg --version
+
+# specify output file
+gpg --output message.txt.gpg --symmetric message.txt
+
+# encryt and sign (all in single output file)
+gpg --sign --symmetric message.txt

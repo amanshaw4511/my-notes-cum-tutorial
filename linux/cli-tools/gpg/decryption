@@ -1,0 +1,10 @@
+# decrypt and print message on screen
+# will auto verify signature if any
+# will auto detect if symmetric or asymmetric
+# will appropriate key if available
+# will auto prompt for password if symmetric
+
+gpg --decrypt message.txt.gpg
+
+# decrypt and output to file
+gpg --decrypt message.txt.gpg > message.txt

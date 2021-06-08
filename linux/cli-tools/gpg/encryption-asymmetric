@@ -1,0 +1,19 @@
+## import public key by searching
+    gpg --keyserver pgp.mit.edu --search-keys aman@mail.com
+    # this will list the matching resutl
+    # enter the number next to key to import
+
+
+gpg --encrypt message.txt # this will ask for recepient email
+# enter ID or email
+
+# or specify recepient
+gpg --recepient aman@mail.com --encrypt message.txt
+gpg --armor --recepient aman@mail.com --encrypt message.txt
+
+
+# encrypt ans sign
+gpg --encrypt --sign --recepient aman@mail.com message.txt
+
+# specify output file
+gpg --output message.txt.gpg
