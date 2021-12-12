@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+SCRIPT_PATH='/home/aman/data/git/my/my-notes-cum-tutorial/'
+
 [ $# -eq 0 ] && exit
 
 if [ $1 = "install" ] 
@@ -8,23 +10,31 @@ then
     exit
 fi
 
+if [ $1 = "--help" ]
+then 
+    echo "fzf : show file to open in batcat"
+    echo "fzf vim : select file to open in vim"
+    exit
+fi
+
+
 if [ $1 = "fzf" -a $2 = "vim" ]
 then 
-    cd /home/aman/my/github/manual
+    cd ${SCRIPT_PATH}
     nvim $(fzf)
     exit
 fi
 
 if [ $1 = "fzf" ]
 then 
-    cd /home/aman/my/github/manual
-    bat $(fzf)
+    cd ${SCRIPT_PATH}
+    batcat $(fzf)
     exit
 fi
 
 
 
-[ ! -f /dev/shm/mman ] && echo /home/aman/my/github/manual > /dev/shm/mman
+[ ! -f /dev/shm/mman ] && echo ${SCRIPT_PATH} > /dev/shm/mman
     
 
 cd $(cat /dev/shm/mman)
