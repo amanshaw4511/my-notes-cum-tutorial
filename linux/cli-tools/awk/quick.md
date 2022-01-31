@@ -4,7 +4,7 @@
 ...
 '
 BEGIN { ... }       # beging block, print only once at first
-{ ... }             # body block, print for each line
+/<pattern>/ { ... }             # body block, print for each line
 END { ... }         # end block , print only once at end
 '
 
