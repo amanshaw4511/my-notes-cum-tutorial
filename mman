@@ -41,4 +41,3 @@ cd $(cat /dev/shm/mman)
 $@
 
 echo $PWD > /dev/shm/mman
-
