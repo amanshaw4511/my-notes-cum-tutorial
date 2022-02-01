@@ -2,41 +2,51 @@
 
 SCRIPT_PATH='/home/aman/data/git/my/my-notes-cum-tutorial/'
 
-[ $# -eq 0 ] && exit
-
-if [ $1 = "install" ] 
-then
-    sudo ln -s "$PWD/mman" /usr/bin/mman
+axit() {
     exit
-fi
+}
 
-if [ $1 = "--help" ]
-then 
+show_help() {
     echo "fzf : show file to open in batcat"
     echo "fzf vim : select file to open in vim"
-    exit
-fi
+    axit
+}
 
+install() {
+    sudo ln -s "$PWD/mman" /usr/bin/mman
+    axit
+}
 
-if [ $1 = "fzf" -a $2 = "vim" ]
-then 
+fzf_vim() {
     cd ${SCRIPT_PATH}
     nvim $(fzf)
-    exit
-fi
+    axit
+}
 
-if [ $1 = "fzf" ]
-then 
+fzf_cat() {
     cd ${SCRIPT_PATH}
     batcat $(fzf)
-    exit
-fi
+    axit
+}
 
+parse_args() {
+    [ $# -eq 0 ] && axit
+
+    [ $1 = "install" ] && install
+
+    [ $1 = "--help" ] && show_help
+
+
+    [ $1 = "fzf" -a $2 = "vim" ] && fzf_vim
+
+    [ $1 = "fzf" ] && fzf_cat
+}
+
+parse_args $@
 
 
 [ ! -f /dev/shm/mman ] && echo ${SCRIPT_PATH} > /dev/shm/mman
     
-
 cd $(cat /dev/shm/mman)
 $@
 
