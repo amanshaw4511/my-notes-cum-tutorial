@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+a
 SCRIPT_PATH='/home/aman/data/git/my/my-notes-cum-tutorial/'
 
 axit() {
