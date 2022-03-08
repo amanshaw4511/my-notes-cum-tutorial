@@ -1,0 +1,25 @@
+
+# scope of bean
+@Scope("<type>")
+- singleton
+- prototype
+- request
+- session
+
+
+
+## Singleton
+One bean instance per container
+
+
+## Prototype
+New bean when requested by container
+
+## Request
+One bean per HTTP request
+
+## Session
+One bean per HTTP session
+
+
+
