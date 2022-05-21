@@ -9,7 +9,20 @@ aspect ->
     + advice -> 
         @Before
         @After
+        @Around
 
 joinPoint -> execution instance to be intercepted
+
+
+
+@Aspect
+@Configuration
+class Aspect {
+
+    @Before("execution(* com.aman.*.*(..))")
+    void before(JoinPoint joinPoint) {
+
+    }
+}
 
 
