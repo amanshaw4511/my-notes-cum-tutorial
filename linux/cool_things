@@ -1,0 +1,21 @@
+## know you ip and location
+curl ipinfo.io
+
+## know ip info and location
+curl ipinfo.io/ip
+
+### alternative
+curl getipaddr.net
+
+
+
+## get manuals, examples, stackoverflow ans
+curl cht.sh
+
+
+## share files with others
+curl -F "file=@filepath" 0x0.st
+
+
+
+

@@ -1,0 +1,22 @@
+cluster:
+  - master node:
+      - api server
+      - controller manager
+      - scheduler
+      - etcd
+  - worker nodes:
+      - worker node 1:
+        - kubelet
+        - kube-proxy
+        - cAdvisor
+        - pods:
+          - pod 1:
+            - containers:
+              - container 1
+              - container 2
+              - container 3
+            - volumes
+          - pod 2
+          - pod 3
+      - worker node 2
+      - worker node 3
