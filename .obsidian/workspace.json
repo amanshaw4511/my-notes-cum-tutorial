@@ -1,0 +1,159 @@
+{
+  "main": {
+    "id": "768fddd2f50389f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "214489f77277fad9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20e5b638de051099",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "scala/init.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "81782c651a724712",
+    "type": "split",
+    "children": [
+      {
+        "id": "af76614d2c02d235",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d73e290e2f384141",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "888ed1520069964c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dc45c0666dd1cfc3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "683605aec44f3648",
+    "type": "split",
+    "children": [
+      {
+        "id": "efb075f962625685",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9a00a9a6d7a0fa83",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "scala/init.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c5b792c8b1e9dddc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "scala/init.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6cfc94c24b90e54a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "806469f649a0c9ad",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "scala/init.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "20e5b638de051099",
+  "lastOpenFiles": [
+    "linux/cli-tools/awk/regex.md",
+    "linux/cli-tools/awk/quick.md",
+    "linux/cli-tools/awk/function.md",
+    "linux/cli-tools/awk/buildin_function.md",
+    "linux/cli-tools/awk/array.md",
+    "linux/cli-tools/awk/SUMMARY.md",
+    "README.md"
+  ]
+}
