@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scala/Untitled.md",
+                "file": "scala/Variable and Data types.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scala/Untitled.md",
+                "file": "scala/Variable and Data types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "scala/Untitled.md",
+                "file": "scala/Variable and Data types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scala/Untitled.md"
+                "file": "scala/Variable and Data types.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "20e5b638de051099",
   "lastOpenFiles": [
     "scala/Intro.md",
-    "scala/Untitled.md",
+    "scala/Variable and Data types.md",
     "linux/cli-tools/awk/regex.md",
     "linux/cli-tools/awk/quick.md",
     "linux/cli-tools/awk/function.md",
