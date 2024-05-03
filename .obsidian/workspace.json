@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scala/OOP Domain Modeling.md",
+                "file": "scala/Domain Modeling.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scala/OOP Domain Modeling.md",
+                "file": "scala/Domain Modeling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "scala/OOP Domain Modeling.md",
+                "file": "scala/Domain Modeling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scala/OOP Domain Modeling.md"
+                "file": "scala/Domain Modeling.md"
               }
             }
           }
@@ -149,7 +149,7 @@
   "active": "20e5b638de051099",
   "lastOpenFiles": [
     "scala/Control Structure.md",
-    "scala/OOP Domain Modeling.md",
+    "scala/Domain Modeling.md",
     "scala/Intro.md",
     "scala/Variable and Data types.md",
     "linux/cli-tools/awk/regex.md",
