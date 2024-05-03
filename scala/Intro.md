@@ -1,0 +1,3 @@
+- statically typed
+- runs on jvm
+- 

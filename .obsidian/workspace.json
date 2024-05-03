@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scala/init.md",
+                "file": "scala/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scala/init.md",
+                "file": "scala/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "scala/init.md",
+                "file": "scala/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scala/init.md"
+                "file": "scala/Untitled.md"
               }
             }
           }
@@ -148,6 +148,8 @@
   },
   "active": "20e5b638de051099",
   "lastOpenFiles": [
+    "scala/Intro.md",
+    "scala/Untitled.md",
     "linux/cli-tools/awk/regex.md",
     "linux/cli-tools/awk/quick.md",
     "linux/cli-tools/awk/function.md",
