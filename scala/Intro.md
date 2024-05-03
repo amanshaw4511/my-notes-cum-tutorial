@@ -1,3 +1,4 @@
 - statically typed
 - runs on jvm
+- if-else, for, while loop are expression
 - 

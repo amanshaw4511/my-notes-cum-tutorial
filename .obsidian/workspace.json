@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "scala/Variable and Data types.md",
+                "file": "scala/Control Structure.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "scala/Variable and Data types.md",
+                "file": "scala/Control Structure.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "scala/Variable and Data types.md",
+                "file": "scala/Control Structure.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "scala/Variable and Data types.md"
+                "file": "scala/Control Structure.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "20e5b638de051099",
   "lastOpenFiles": [
     "scala/Intro.md",
+    "scala/Control Structure.md",
     "scala/Variable and Data types.md",
     "linux/cli-tools/awk/regex.md",
     "linux/cli-tools/awk/quick.md",
