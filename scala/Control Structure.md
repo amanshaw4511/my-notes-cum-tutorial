@@ -41,8 +41,36 @@ println(evenNums)
 ## Match Expression
 ```scala
 val num = 1
-match num
-	case 1 : println("one")
-	case 2 : println("two")
-	
+num match
+	case 1 => println("one")
+	case 2 => println("two")
+	case _ => println("other")
+
+// match as expression
+val numAsString = num match
+	case 1 => "one"
+	case 2 => "two"
+	case _ => "other"
+
+println(numAsString)
+
+// match class
+val person = Person("aman", 20)
+
+val adultStatus = person match
+	case Person(name, age) if age >= 18 => s"$name is an adult"
+	case Person(name, _) if age 
+
+// match types 
+def getClassAsString(x: Matchable) : String = x match
+	case s: String => s"$s is a String"
+	case i: Int => "Int"
+	case d: Double => "Double"
+	case l: List[?] => "List"
+	case _: => "Uknown"
+
+getClassAsString(1)               // Int
+getClassAsString("hello")         // 'hello' is a String
+getClassAsString(List(1, 2, 3))   // List
+//
 ```
