@@ -59,7 +59,10 @@ val person = Person("aman", 20)
 
 val adultStatus = person match
 	case Person(name, age) if age >= 18 => s"$name is an adult"
-	case Person(name, _) if age 
+	case Person(name, _) => s"$name is not an adult"
+
+println(adultStatus)
+
 
 // match types 
 def getClassAsString(x: Matchable) : String = x match
@@ -74,3 +77,18 @@ getClassAsString("hello")         // 'hello' is a String
 getClassAsString(List(1, 2, 3))   // List
 //
 ```
+
+
+## Try/Catch/Finally
+```scala
+try
+	writeTextToFile(text) 
+catch 
+	case ioe: IOException => println("Got an IOException.") 
+	case nfe: NumberFormatException => println("Got a NumberFormatException.")
+finally
+	println("Clean up your resources here.")
+
+```
+
+
