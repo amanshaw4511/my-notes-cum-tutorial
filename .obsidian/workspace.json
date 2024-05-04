@@ -146,8 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "20e5b638de051099",
+  "active": "d73e290e2f384141",
   "lastOpenFiles": [
+    "spark",
     "scala/Control Structure.md",
     "scala/Domain Modeling.md",
     "scala/Intro.md",
